@@ -3,7 +3,7 @@
     import CatagoryCard from "$lib/components/CatagoryCard.svelte";
     import HeroCard from '$lib/components/HeroCard.svelte';
     import Article from '$lib/components/Article.svelte';
-    
+    import { base } from '$app/paths'
 
     const catagories = [
         {id:'0', path: '/images/the-marias.jpg', title: 'Top 10'}
@@ -424,7 +424,7 @@
 <div class="main-hero-container">
 
     {#key currentArticle}
-        <div class="main-inner" style="background-image: url({currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
+        <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
     {/key}
 
     <div class="main-inner-mask"></div>

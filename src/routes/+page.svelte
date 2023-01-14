@@ -240,7 +240,7 @@
 <div class="main-hero-container">
 
     {#key currentCatagory}
-        <div class="main-inner" style="background-image: url('{base}' + {catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
+        <div class="main-inner" style="background-image: url({base}{catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
     {/key}
 
     <div class="main-inner-mask"></div>
