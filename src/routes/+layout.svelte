@@ -156,7 +156,7 @@
             <ul class="nav-links">
                 <div class="nav-item">
                     <div class="li-overlay">Introduction</div>
-                    <a href="/static-artsy-site">Introduction</a>
+                    <a href="./">Introduction</a>
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>
@@ -166,9 +166,9 @@
                     <div class="li-overlay">Film</div>
                     <a href="">Film</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item">  
                     <div class="li-overlay">Music</div>
-                    <a href="/static-artsy-site/music">Music</a>
+                    <a href="./music">Music</a>
                 </div>
             </ul>
         </div>
