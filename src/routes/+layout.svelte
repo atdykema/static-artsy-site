@@ -1,5 +1,6 @@
 <script>
     import { fade } from 'svelte/transition'
+    import { base } from '$app/paths'
 </script>
 
 <style>
@@ -156,7 +157,7 @@
             <ul class="nav-links">
                 <div class="nav-item">
                     <div class="li-overlay">Introduction</div>
-                    <a href="./">Introduction</a>
+                    <a href="{base}/">Introduction</a>
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>
@@ -168,7 +169,7 @@
                 </div>
                 <div class="nav-item">  
                     <div class="li-overlay">Music</div>
-                    <a href="./music">Music</a>
+                    <a href="{base}/music">Music</a>
                 </div>
             </ul>
         </div>
