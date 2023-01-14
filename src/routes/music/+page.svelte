@@ -3,6 +3,7 @@
     import CatagoryCard from "$lib/components/CatagoryCard.svelte";
     import HeroCard from '$lib/components/HeroCard.svelte';
     import Article from '$lib/components/Article.svelte';
+    
 
     const catagories = [
         {id:'0', path: '/images/the-marias.jpg', title: 'Top 10'}

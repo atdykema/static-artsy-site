@@ -1,6 +1,6 @@
 <script>
     export let id, path, title, currentCatagory, currentArticle
-
+    import { base } from '$app/paths'
 </script>
 
 <style>
@@ -91,11 +91,11 @@
 
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="main-container" style="background-image: url({path}); {currentCatagory == id ? "opacity: 100%; transform: translate(0%);" : ""}" on:click={()=>{currentCatagory = id; currentArticle = -1 * Math.random();}} >
+<div class="main-container" style="background-image: url({base}{path}); {currentCatagory == id ? "opacity: 100%; transform: translate(0%);" : ""}" on:click={()=>{currentCatagory = id; currentArticle = -1 * Math.random();}} >
     <div class="main-container-inner">
         <div class="title-container">
             
-            <div class="li-overlay" style="background-image: url({path})">{title}</div>
+            <div class="li-overlay" style="background-image: url({base}{path})">{title}</div>
             <h1 >{title}</h1>
         </div>
     </div>

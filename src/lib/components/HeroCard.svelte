@@ -1,5 +1,6 @@
 <script>
     export let currentArticle, id, path, data
+    import { base } from '$app/paths'
 </script>
 
 <style>
@@ -48,7 +49,7 @@
 </style>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="main-container" style="background-image: url({path});" on:click={()=>{currentArticle = id}}>
+<div class="main-container" style="background-image: url({base}{path});" on:click={()=>{currentArticle = id}}>
     <div class="main-container-inner">
         <h1>{data.title}</h1>
         <h2>{data.artist}</h2>
