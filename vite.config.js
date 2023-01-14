@@ -1,10 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 
 const config = {
-	plugins: [sveltekit()],
-	paths: {
-		base: '/'
-	}
+	plugins: [sveltekit()]
 };
 
 export default config;

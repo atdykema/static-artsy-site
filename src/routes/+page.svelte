@@ -3,12 +3,10 @@
     import CatagoryCard from "$lib/components/CatagoryCard.svelte";
 
     const catagories = [
-        {id:'4', path: 'src/static/images/IMG_2051.jpg', title: 'Hi there'}
+        {id:'4', path: '/images/IMG_2051.jpg', title: 'Hi there'}
     ]
 
     let currentCatagory = 0
-
-
 </script>
 
 <style>

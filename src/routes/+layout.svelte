@@ -6,7 +6,7 @@
 
     @font-face{
         font-family: main-font;
-        src:url(../static/fonts/acid.otf);
+        src:url(/fonts/acid.otf);
     }
 
     *{
@@ -156,7 +156,7 @@
             <ul class="nav-links">
                 <div class="nav-item">
                     <div class="li-overlay">Introduction</div>
-                    <a href="/">Introduction</a>
+                    <a href="/static-artsy-site">Introduction</a>
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>
@@ -168,7 +168,7 @@
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Music</div>
-                    <a href="/music">Music</a>
+                    <a href="/static-artsy-site/music">Music</a>
                 </div>
             </ul>
         </div>

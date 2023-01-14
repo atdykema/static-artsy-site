@@ -5,7 +5,7 @@
     import Article from '$lib/components/Article.svelte';
 
     const catagories = [
-        {id:'0', path: '/src/static/images/the-marias.jpg', title: 'Top 10'}
+        {id:'0', path: '/images/the-marias.jpg', title: 'Top 10'}
 
     ]
 
@@ -13,7 +13,7 @@
 
     const articles = {
         0: [
-            {id:'0', path: '/src/static/images/frank-ocean.jpg', data: 
+            {id:'0', path: '/images/frank-ocean.jpg', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -25,7 +25,7 @@
                 }
                 
             },
-            {id:'1', path: '/src/static/images/positions-ariana-grande.png', data: 
+            {id:'1', path: '/images/positions-ariana-grande.png', data: 
                 {
                 title: "Worst Behavior", 
                 artist: "Ariana Grande", 
@@ -37,7 +37,7 @@
                 }
                 
             },
-            {id:'2', path: '/src/static/images/gorillaz.webp', data: 
+            {id:'2', path: '/images/gorillaz.webp', data: 
                 {
                 title: "Sleeping Powder", 
                 artist: "Gorillaz", 
@@ -49,7 +49,7 @@
                 }
                 
             },
-            {id:'3', path: '/src/static/images/the-marias.jpeg', data: 
+            {id:'3', path: '/images/the-marias.jpeg', data: 
                 {
                 title: "The Mice Inside This Room", 
                 artist: "The Marias", 
@@ -61,7 +61,7 @@
                 }
                 
             },
-            {id:'4', path: '/src/static/images/kirinji-transformed.jpeg', data: 
+            {id:'4', path: '/images/kirinji-transformed.jpeg', data: 
                 {
                 title: "Jikanga Nai", 
                 artist: "Kirinji", 
@@ -74,7 +74,7 @@
                 
             },
             
-            {id:'5', path: '/src/static/images/casiopea.jpg', data: 
+            {id:'5', path: '/images/casiopea.jpg', data: 
                 {
                 title: "Domino Line", 
                 artist: "CASIOPEA", 
@@ -87,7 +87,7 @@
                 
                 
             },
-            {id:'6', path: '/src/static/images/los-retros-transformed.jpeg', data: 
+            {id:'6', path: '/images/los-retros-transformed.jpeg', data: 
                 {
                 title: "Solo Tú", 
                 artist: "Los Retros", 
@@ -100,7 +100,7 @@
                 
                 
             },
-            {id:'7', path: '/src/static/images/rex-orange-county-transformed.jpeg', data: 
+            {id:'7', path: '/images/rex-orange-county-transformed.jpeg', data: 
                 {
                 title: "Happiness", 
                 artist: "Rex Orange County", 
@@ -113,7 +113,7 @@
                 
                 
             },
-            {id:'8', path: '/src/static/images/aphex-twin.jpg', data: 
+            {id:'8', path: '/images/aphex-twin.jpg', data: 
                 {
                 title: "#3", 
                 artist: "Aphex Twin", 
@@ -126,7 +126,7 @@
                 
                 
             },
-            {id:'9', path: '/src/static/images/tyler-the-creator.webp', data: 
+            {id:'9', path: '/images/tyler-the-creator.webp', data: 
                 {
                 title: "Garden Shed", 
                 artist: "Tyler, The Creator", 
@@ -141,7 +141,7 @@
             
         ],
         1: [
-            {id:'0', path: '/src/static/images/blonde-frank-ocean.webp', data: 
+            {id:'0', path: '/images/blonde-frank-ocean.webp', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -152,7 +152,7 @@
                 genius_link: ""
                 }
             },
-            {id:'1', path: '/src/static/images/blonde-frank-ocean.webp', data: 
+            {id:'1', path: '/images/blonde-frank-ocean.webp', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -160,7 +160,7 @@
                 embed_link: "https://open.spotify.com/embed/album/5TkaDC4mYSLBvdG6UrIB0v?utm_source=generator"
                 }
             },
-            {id:'2', path: '/src/static/images/blonde-frank-ocean.webp', data: 
+            {id:'2', path: '/images/blonde-frank-ocean.webp', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -168,7 +168,7 @@
                 embed_link: "https://open.spotify.com/embed/album/5TkaDC4mYSLBvdG6UrIB0v?utm_source=generator"
                 }
             },
-            {id:'3', path: '/src/static/images/blonde-frank-ocean.webp', data: 
+            {id:'3', path: '/images/blonde-frank-ocean.webp', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -176,7 +176,7 @@
                 embed_link: "https://open.spotify.com/embed/album/5TkaDC4mYSLBvdG6UrIB0v?utm_source=generator"
                 }
             },
-            {id:'4', path: '/src/static/images/blonde-frank-ocean.webp', data: 
+            {id:'4', path: '/images/blonde-frank-ocean.webp', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
