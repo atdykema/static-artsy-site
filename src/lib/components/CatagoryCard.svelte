@@ -91,7 +91,7 @@
 
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="main-container" style="background-image: url({base}{path}); {currentCatagory == id ? "opacity: 100%; transform: translate(0%);" : ""}" on:click={()=>{currentCatagory = id; currentArticle = -1 * Math.random();}} >
+<div class="main-container" style="background-image: url({base}{path}); {currentCatagory == id ? "opacity: 100%; transform: translate(0%);" : ""}" on:click={()=>{currentCatagory = parseInt(id); currentArticle = -1 * Math.random();}} >
     <div class="main-container-inner">
         <div class="title-container">
             

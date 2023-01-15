@@ -4,10 +4,48 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'4', path: '/images/IMG_2051.jpg', title: 'Hi there'}
+        {id:'0', path: '/images/IMG_2051.jpg', title: 'Hi there!'},
+        {id:'1', path: '/images/IMG_0179.jpg', title: 'Hi there'},
+        {id:'2', path: '/images/IMG_1507.jpg', title: 'Hi there...?'},
+        {id:'3', path: '/images/IMG_2600.jpg', title: 'Still checking these captions?'},
+        {id:'4', path: '/images/IMG_7668.jpg', title: 'Atleast someone is'},
+
     ]
 
     let currentCatagory = 0
+
+    function onKeyDown(e){
+        switch(e.keyCode){
+            
+            case 37:
+                if(currentCatagory > 0)
+                {
+                    currentCatagory -= 1
+                }
+                break
+            case 38:
+                if(currentCatagory > 0)
+                {
+                    currentCatagory -= 1
+                }
+                break
+            case 39:
+                if(currentCatagory < catagories.length-1)
+                {
+                    currentCatagory += 1
+                }
+                break
+            case 40:
+                if(currentCatagory < catagories.length-1)
+                {
+                    currentCatagory += 1
+                }
+                break
+                
+        }
+        console.log(currentCatagory)
+    }
+
 </script>
 
 <style>
@@ -137,6 +175,21 @@
         
     }
 
+    @keyframes fade {
+        0%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        80%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0%);
+        }
+    }
+
     @keyframes ani {
         0%{
             border: rgb(212, 212, 212) 1px solid;
@@ -234,6 +287,30 @@
         
     }
 
+    .intro-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        font-size: 64px;
+    }
+
+    .text-1{
+        animation: fade 3s;
+    }
+
+    .text-2{
+        animation: fade 4s;
+    }
+
+    .text-3{
+        animation: fade 5s;
+    }
+
+    .text-late{
+        animation: fade 7s;
+    }
+
 
 </style>
 
@@ -251,33 +328,58 @@
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
             <div class="main-hero" out:fade|local={{duration: 500}}>
                 <div class="inner-hero" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 90%; text-align: center; font-size: 3rem;" >
-                    <div >
-                        Welcome to my website!
+                    {#if currentCatagory == 0}
+                    <div class="intro-div text-1">
+                        Hi there.
                     </div>
-                    <br>
-                    <div>
-                        My name is Drew
+                    <div class="intro-div text-2">
+                        My name is Drew.
                     </div>
-                    <br>
-                    <div >
-                        The rest of the site isn't this boring, I promise.
+                    <div class="intro-div text-late" style="font-size: 36px;">
+                        Psst... you can use the arrow keys to navigate ;)
                     </div>
-                    <br>
-                    <div >
-                        This is just the part with the necessary salutory gestures 
+                    {:else if currentCatagory == 1}
+                    <div class="intro-div text-1">
+                        I really enjoy listening to music, fine-tuning my audio equipment to get the most of what I comsume.
                     </div>
-                    <br>
-                    <div >
-                        Up in the nav bar you'll find some links to some of the stuff I've done and things I like 
+                    <div class="intro-div text-2">
+                        Outer space excites me, I love keeping up to date with all things space tech and exploration.
                     </div>
-                    <br>
-                    <div >
-                        Look around and have fun!
+                    <div class="intro-div text-3">
+                        I'm getting better at picking up new books, I know theres so much out there to find.
                     </div>
-                    <br>
-                    <div >
-                        Also, this is a work in progress so there's ever more to come!
+                    {:else if currentCatagory == 2}
+                    <div class="intro-div text-1">
+                        More than anything though, I'm passionate about creating new things.
                     </div>
+                    <div class="intro-div text-2">
+                        Doing so while balancing my emphasis on objective problem solving and creative expression.
+                    </div>
+                    <div class="intro-div text-3">
+                        I like solving problems while making the world a bit more colorful.
+                    </div>
+                    {:else if currentCatagory == 3}
+                    <div class="intro-div text-1">
+                        But I'd be lying if I said adding my own flair makes everything much more fun.
+                    </div>
+                    <div class="intro-div text-2">
+                        What is life without fun?
+                    </div>
+                    <div class="intro-div text-3">
+                        It would be no life of mine, that's for sure.
+                    </div>
+                    {:else if currentCatagory == 4}
+                    <div class="intro-div text-1">
+                        Anyway, thanks for coming to my site!
+                    </div>
+                    <div class="intro-div text-2">
+                        Take a look at the nav bar for some other stuff about me (you need to hover at the top to see it) 
+                    </div>
+                    <div class="intro-div text-3">
+                        And most importantly, enjoy yourself!
+                    </div>
+                    {/if}
+
                 </div>
             </div>
         </div>
@@ -296,3 +398,5 @@
 
     
 </div>
+
+<svelte:window on:keydown|preventDefault={onKeyDown} />

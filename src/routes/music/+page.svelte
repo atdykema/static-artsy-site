@@ -6,7 +6,10 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/the-marias.jpg', title: 'Top 10'}
+        {id:'0', path: '/images/the-marias.jpg', title: 'Top 10'},
+        {id:'1', path: '/images/the-marias.jpg', title: 'Top 10'},
+        {id:'2', path: '/images/the-marias.jpg', title: 'Top 10'},
+
 
     ]
 
@@ -189,6 +192,37 @@
     }   
 
     let currentArticle = -1
+
+    function onKeyDown(e){
+        switch(e.keyCode){
+            
+            case 37:
+                if(currentCatagory > 0)
+                {
+                    currentCatagory -= 1
+                }
+                break
+            case 38:
+                if(currentCatagory > 0)
+                {
+                    currentCatagory -= 1
+                }
+                break
+            case 39:
+                if(currentCatagory < catagories.length-1)
+                {
+                    currentCatagory += 1
+                }
+                break
+            case 40:
+                if(currentCatagory < catagories.length-1)
+                {
+                    currentCatagory += 1
+                }
+                break
+                
+        }
+    }
 
 </script>
 
@@ -465,3 +499,4 @@
     
 </div>
 
+<svelte:window on:keydown|preventDefault={onKeyDown} />
