@@ -51,9 +51,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="main-container" style="background-image: url({base}{path});" on:click={()=>{currentArticle = id}}>
     <div class="main-container-inner">
-        <h1>{data.title}</h1>
-        <h2>{data.artist}</h2>
-        <div>{data.album}</div>
+        
     </div>
     
 </div>

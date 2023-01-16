@@ -6,9 +6,9 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/the-marias.jpg', title: 'Top 10'},
-        {id:'1', path: '/images/the-marias.jpg', title: 'Top 10'},
-        {id:'2', path: '/images/the-marias.jpg', title: 'Top 10'},
+        {id:'0', path: '/images/the-marias.jpg', title: '10s-20s'},
+        {id:'1', path: '/images/the-marias.jpg', title: '90s-00s'},
+        {id:'2', path: '/images/the-marias.jpg', title: '70s-80s'},
 
 
     ]
@@ -41,19 +41,7 @@
                 }
                 
             },
-            {id:'2', path: '/images/gorillaz.webp', data: 
-                {
-                title: "Sleeping Powder", 
-                artist: "Gorillaz", 
-                album: "Sleeping Powder", 
-                embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
-                desc: "“Sleeping Powder” is about 2-D’s drug addiction. In the Gorillaz backstory, 2-D suffered a number of head injuries—in fact, he earned the name 2-D in Phase 1 because of the two dents in his head that formed when Murdoc hit him with his car. 2-D’s head trauma later caused him to become addicted to painkillers. The song was exclusively released through the Gorillaz app as a part of Phase 4 on June 8, 2017, but the music video appeared online the same day. According to Damon Albarn during a Gorillaz concert on June 8th, 2017, “Sleeping Powder” was written as a response to a portion of Gorillaz fans that complained about the lowered emphasis of 2D on their fifth studio album Humanz.",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-            },
-            {id:'3', path: '/images/the-marias.jpeg', data: 
+            {id:'2', path: '/images/the-marias.jpeg', data: 
                 {
                 title: "The Mice Inside This Room", 
                 artist: "The Marias", 
@@ -65,7 +53,7 @@
                 }
                 
             },
-            {id:'4', path: '/images/kirinji-transformed.jpeg', data: 
+            {id:'3', path: '/images/kirinji-transformed.jpeg', data: 
                 {
                 title: "Jikanga Nai", 
                 artist: "Kirinji", 
@@ -77,21 +65,7 @@
                 }
                 
             },
-            
-            {id:'5', path: '/images/casiopea.jpg', data: 
-                {
-                title: "Domino Line", 
-                artist: "CASIOPEA", 
-                album: "Mint Jams", 
-                embed_link: "https://open.spotify.com/embed/track/1y76Hl0nXEOYBf4C9rl5rf?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'6', path: '/images/los-retros-transformed.jpeg', data: 
+            {id:'4', path: '/images/los-retros-transformed.jpeg', data: 
                 {
                 title: "Solo Tú", 
                 artist: "Los Retros", 
@@ -104,7 +78,7 @@
                 
                 
             },
-            {id:'7', path: '/images/rex-orange-county-transformed.jpeg', data: 
+            {id:'5', path: '/images/rex-orange-county-transformed.jpeg', data: 
                 {
                 title: "Happiness", 
                 artist: "Rex Orange County", 
@@ -117,20 +91,7 @@
                 
                 
             },
-            {id:'8', path: '/images/aphex-twin.jpg', data: 
-                {
-                title: "#3", 
-                artist: "Aphex Twin", 
-                album: "Selected Ambient Works Volume II", 
-                embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'9', path: '/images/tyler-the-creator.webp', data: 
+            {id:'6', path: '/images/tyler-the-creator-transformed.webp', data: 
                 {
                 title: "Garden Shed", 
                 artist: "Tyler, The Creator", 
@@ -145,24 +106,30 @@
             
         ],
         1: [
-            {id:'0', path: '/images/blonde-frank-ocean.webp', data: 
+            {id:'0', path: '/images/gorillaz.webp', data: 
                 {
-                title: "Nikes", 
-                artist: "Frank Ocean", 
-                album: "Blonde", 
-                embed_link: "https://open.spotify.com/embed/album/5TkaDC4mYSLBvdG6UrIB0v?utm_source=generator",
+                title: "Sleeping Powder", 
+                artist: "Gorillaz", 
+                album: "Sleeping Powder", 
+                embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
+                desc: "“Sleeping Powder” is about 2-D’s drug addiction. In the Gorillaz backstory, 2-D suffered a number of head injuries—in fact, he earned the name 2-D in Phase 1 because of the two dents in his head that formed when Murdoc hit him with his car. 2-D’s head trauma later caused him to become addicted to painkillers. The song was exclusively released through the Gorillaz app as a part of Phase 4 on June 8, 2017, but the music video appeared online the same day. According to Damon Albarn during a Gorillaz concert on June 8th, 2017, “Sleeping Powder” was written as a response to a portion of Gorillaz fans that complained about the lowered emphasis of 2D on their fifth studio album Humanz.",
+                desc_link: "",
+                genius_link: ""
+                }
+                
+            },
+            {id:'7', path: '/images/aphex-twin-transformed.jpeg', data: 
+                {
+                title: "#3", 
+                artist: "Aphex Twin", 
+                album: "Selected Ambient Works Volume II", 
+                embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
                 desc: "",
                 desc_link: "",
                 genius_link: ""
                 }
-            },
-            {id:'1', path: '/images/blonde-frank-ocean.webp', data: 
-                {
-                title: "Nikes", 
-                artist: "Frank Ocean", 
-                album: "Blonde", 
-                embed_link: "https://open.spotify.com/embed/album/5TkaDC4mYSLBvdG6UrIB0v?utm_source=generator"
-                }
+                
+                
             },
             {id:'2', path: '/images/blonde-frank-ocean.webp', data: 
                 {
