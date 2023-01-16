@@ -161,11 +161,11 @@
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>
-                    <a href="">Projects</a>
+                    <a href="{base}/projects">Projects</a>
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Film</div>
-                    <a href="">Film</a>
+                    <a href="{base}/film">Film</a>
                 </div>
                 <div class="nav-item">  
                     <div class="li-overlay">Music</div>
