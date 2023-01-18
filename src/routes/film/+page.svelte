@@ -6,19 +6,14 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/the-marias.jpg', title: '10s-20s'},
-        {id:'1', path: '/images/nirvana.webp', title: '90s-00s'},
-        {id:'2', path: '/images/pink-floyd2-transformed.webp', title: '70s-80s'},
-        {id:'3', path: '/images/the-beatles-transformed.jpeg', title: '50s-60s'},
-
-
+        {id:'0', path: '', title: ''},
     ]
 
     let currentCatagory = 0
 
     const articles = {
         0: [
-            {id:'0', path: '/images/frank-ocean.jpg', data: 
+            {id:'0', path: '/images/the-big-short.jpg', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -30,7 +25,7 @@
                 }
                 
             },
-            {id:'1', path: '/images/positions-ariana-grande.png', data: 
+            {id:'1', path: '/images/inglorious-basterds.jpg', data: 
                 {
                 title: "Worst Behavior", 
                 artist: "Ariana Grande", 
@@ -42,7 +37,7 @@
                 }
                 
             },
-            {id:'2', path: '/images/the-marias.jpeg', data: 
+            {id:'2', path: '/images/the-batman-transformed.jpeg', data: 
                 {
                 title: "The Mice Inside This Room", 
                 artist: "The Marias", 
@@ -54,7 +49,7 @@
                 }
                 
             },
-            {id:'3', path: '/images/kirinji-transformed.jpeg', data: 
+            {id:'3', path: '/images/spiderverse.png', data: 
                 {
                 title: "Jikanga Nai", 
                 artist: "Kirinji", 
@@ -66,7 +61,7 @@
                 }
                 
             },
-            {id:'4', path: '/images/los-retros-transformed.jpeg', data: 
+            {id:'4', path: '/images/princess-mononoke.jpg', data: 
                 {
                 title: "Solo Tú", 
                 artist: "Los Retros", 
@@ -79,7 +74,7 @@
                 
                 
             },
-            {id:'5', path: '/images/rex-orange-county-transformed.jpeg', data: 
+            {id:'5', path: '/images/midsommar-transformed.jpeg', data: 
                 {
                 title: "Happiness", 
                 artist: "Rex Orange County", 
@@ -92,7 +87,55 @@
                 
                 
             },
-            {id:'6', path: '/images/tyler-the-creator-transformed.webp', data: 
+            {id:'6', path: '/images/the-social-network.jpg', data: 
+                {
+                title: "Garden Shed", 
+                artist: "Tyler, The Creator", 
+                album: "Flower Boy", 
+                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
+                desc: "",
+                desc_link: "",
+                genius_link: ""
+                }
+                
+            },
+            {id:'7', path: '/images/interstellar.jpg', data: 
+                {
+                title: "Garden Shed", 
+                artist: "Tyler, The Creator", 
+                album: "Flower Boy", 
+                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
+                desc: "",
+                desc_link: "",
+                genius_link: ""
+                }
+                
+            },
+            {id:'8', path: '/images/django.jpg', data: 
+                {
+                title: "Garden Shed", 
+                artist: "Tyler, The Creator", 
+                album: "Flower Boy", 
+                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
+                desc: "",
+                desc_link: "",
+                genius_link: ""
+                }
+                
+            },
+            {id:'9', path: '/images/the-sting-transformed.jpeg', data: 
+                {
+                title: "Garden Shed", 
+                artist: "Tyler, The Creator", 
+                album: "Flower Boy", 
+                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
+                desc: "",
+                desc_link: "",
+                genius_link: ""
+                }
+                
+            },
+            {id:'10', path: '/images/whiplash.jpg', data: 
                 {
                 title: "Garden Shed", 
                 artist: "Tyler, The Creator", 
@@ -104,127 +147,6 @@
                 }
                 
             }
-            
-        ],
-        1: [
-            {id:'0', path: '/images/gorillaz.webp', data: 
-                {
-                title: "Sleeping Powder", 
-                artist: "Gorillaz", 
-                album: "Sleeping Powder", 
-                embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
-                desc: "“Sleeping Powder” is about 2-D’s drug addiction. In the Gorillaz backstory, 2-D suffered a number of head injuries—in fact, he earned the name 2-D in Phase 1 because of the two dents in his head that formed when Murdoc hit him with his car. 2-D’s head trauma later caused him to become addicted to painkillers. The song was exclusively released through the Gorillaz app as a part of Phase 4 on June 8, 2017, but the music video appeared online the same day. According to Damon Albarn during a Gorillaz concert on June 8th, 2017, “Sleeping Powder” was written as a response to a portion of Gorillaz fans that complained about the lowered emphasis of 2D on their fifth studio album Humanz.",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-            },
-            {id:'1', path: '/images/aphex-twin-transformed.jpeg', data: 
-                {
-                title: "#3", 
-                artist: "Aphex Twin", 
-                album: "Selected Ambient Works Volume II", 
-                embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'2', path: '/images/amy-winehouse.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'3', path: '/images/kurt-cobain.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'4', path: '/images/nsync.webp', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'5', path: '/images/britney-spears.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-        ],
-        2: [
-            {id:'0', path: '/images/elo.jpg', data: 
-                {
-                title: "Sleeping Powder", 
-                artist: "Gorillaz", 
-                album: "Sleeping Powder", 
-                embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
-                desc: "“Sleeping Powder” is about 2-D’s drug addiction. In the Gorillaz backstory, 2-D suffered a number of head injuries—in fact, he earned the name 2-D in Phase 1 because of the two dents in his head that formed when Murdoc hit him with his car. 2-D’s head trauma later caused him to become addicted to painkillers. The song was exclusively released through the Gorillaz app as a part of Phase 4 on June 8, 2017, but the music video appeared online the same day. According to Damon Albarn during a Gorillaz concert on June 8th, 2017, “Sleeping Powder” was written as a response to a portion of Gorillaz fans that complained about the lowered emphasis of 2D on their fifth studio album Humanz.",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-            },
-            {id:'1', path: '/images/pink-floyd.jpg', data: 
-                {
-                title: "#3", 
-                artist: "Aphex Twin", 
-                album: "Selected Ambient Works Volume II", 
-                embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'3', path: '/images/casiopea.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'4', path: '/images/anri-transformed.webp', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-        ],
-        3: [
-            {id:'0', path: '/images/jimmy-hendrix.webp', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'1', path: '/images/abba-transformed.jpeg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
             
         ]
     }   
@@ -310,34 +232,17 @@
         align-items: center;
         width: 100%;
         background-size: cover;
-        grid-column-start: 4;
+        grid-column-start: 2;
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
         -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
         backdrop-filter: blur(8px); /* Chrome and Opera */
-        box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.35);
         background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;
         z-index: 100;
         border: 1px solid transparent;
-    }
-
-    .main-catagory-list{
-        display: flex;
-        flex-direction: column;
-        grid-column: span 3;
-        grid-row-start: 2;
-        grid-row-end: 12;
-        z-index: 101;
-        animation: fallIn 5s;
-    }
-
-    .main-catagory-list-inner{
-        display: block;
-        height: 80vh;
-        overflow-y: scroll;
     }
 
     .main-inner-layer{
@@ -495,7 +400,7 @@
 
 <div class="main-hero-container">
 
-    {#key currentArticle, currentCatagory}
+    {#key currentArticle}
         <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
     {/key}
 
@@ -522,16 +427,6 @@
             {/if}
         </div>
         {/key}
-    </div>
-
-    <div class="main-inner-layer grid">
-        <div class="main-catagory-list" >
-            <div class="main-catagory-list-inner" >
-                {#each catagories as {id, path, title}}
-                    <CatagoryCard bind:currentCatagory={currentCatagory} bind:currentArticle={currentArticle} id={id} title={title} path={path}></CatagoryCard>
-                {/each}
-            </div>        
-        </div>
     </div>
 
     

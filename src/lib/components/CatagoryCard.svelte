@@ -14,7 +14,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: 1px solid transparent;
-        margin: 0;
+        margin: 5px;
         align-items: center;
         justify-content: center;
         transition: .25s ease-in-out;
@@ -23,6 +23,8 @@
         opacity: 25%;
         transform: translate(-25%);
         background-position: center;
+        border: solid 1px whitesmoke
+        
         
     }
 

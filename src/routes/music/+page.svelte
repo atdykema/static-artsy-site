@@ -6,10 +6,10 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/the-marias.jpg', title: '10s-20s'},
-        {id:'1', path: '/images/nirvana.webp', title: '90s-00s'},
-        {id:'2', path: '/images/pink-floyd2-transformed.webp', title: '70s-80s'},
-        {id:'3', path: '/images/the-beatles-transformed.jpeg', title: '50s-60s'},
+        {id:'0', path: '', title: '10s-20s'},
+        {id:'1', path: '', title: '90s-00s'},
+        {id:'2', path: '', title: '70s-80s'},
+        {id:'3', path: '', title: '50s-60s'},
 
 
     ]
@@ -316,7 +316,6 @@
         grid-row-end: 12;
         -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
         backdrop-filter: blur(8px); /* Chrome and Opera */
-        box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.35);
         background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;
@@ -495,7 +494,7 @@
 
 <div class="main-hero-container">
 
-    {#key currentArticle, currentCatagory}
+    {#key currentCatagory, currentArticle}
         <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
     {/key}
 

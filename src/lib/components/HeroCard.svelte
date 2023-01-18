@@ -23,11 +23,13 @@
         background-size:cover;
         background-repeat: no-repeat;
         opacity: 25%;
+        filter: grayscale(100%);
     }
 
     .main-container:hover {
         flex: 3;
         opacity: 100%;
+        filter: grayscale(0);
     }
 
     .main-container:hover > .main-container-inner{

@@ -316,7 +316,6 @@
         grid-row-end: 12;
         -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
         backdrop-filter: blur(8px); /* Chrome and Opera */
-        box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.35);
         background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;

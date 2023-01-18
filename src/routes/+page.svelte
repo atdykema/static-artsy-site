@@ -4,11 +4,11 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/IMG_2051.jpg', title: 'Hi there!'},
-        {id:'1', path: '/images/IMG_0179.jpg', title: 'Hi there'},
-        {id:'2', path: '/images/IMG_1507.jpg', title: 'Hi there...?'},
-        {id:'3', path: '/images/IMG_2600.jpg', title: 'Still checking these captions?'},
-        {id:'4', path: '/images/IMG_7668.jpg', title: 'Atleast someone is'},
+        {id:'0', path: '', title: 'Hi there!'},
+        {id:'1', path: '', title: 'Hi there'},
+        {id:'2', path: '', title: 'Hi there...?'},
+        {id:'3', path: '', title: 'Still checking these captions?'},
+        {id:'4', path: '/images/mountains.jpg', title: 'Atleast someone is'},
 
     ]
 
@@ -99,10 +99,6 @@
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
-        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-        backdrop-filter: blur(8px); /* Chrome and Opera */
-        box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.35);
-        background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;
         z-index: 100;
@@ -116,7 +112,7 @@
         grid-row-start: 2;
         grid-row-end: 12;
         z-index: 101;
-        animation: fallIn 3s;
+        
     }
 
     .main-catagory-list-inner{
@@ -175,6 +171,8 @@
         
     }
 
+    
+
     @keyframes fade {
         0%{
             opacity: 0%;
@@ -187,6 +185,45 @@
         100%{
             opacity: 100%;
             transform: translateY(0%);
+        }
+    }
+
+    @keyframes fadeColor {
+        0%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        60%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        70%{
+            opacity: 100%;
+            transform: translateY(0%);
+            color: whitesmoke;
+            font-size: 5rem;
+        }
+        75%{
+            color: rgb(255, 0, 0);
+        }
+        78%{
+            color: rgb(255, 153, 0);
+        }
+        81%{
+            color: rgb(255, 251, 0);
+        }
+        84%{
+            color: rgb(60, 255, 0);
+        }
+        87%{
+            color: rgb(0, 47, 255);
+        }
+        90%{
+            color: rgb(225, 0, 255);
+            font-size: 5rem;
+        }
+        100%{
+            color: whitesmoke;
         }
     }
 
@@ -311,6 +348,10 @@
         animation: fade 7s;
     }
 
+    .text-colorful{
+        animation: fadeColor 9s;
+    }
+
 
 </style>
 
@@ -356,8 +397,9 @@
                         Doing so while balancing my emphasis on objective problem solving and creative expression.
                     </div>
                     <div class="intro-div text-3">
-                        I like solving problems while making the world a bit more colorful.
+                        I like solving problems while making the world a bit more
                     </div>
+                    <div class="intro-div text-colorful">colorful.</div>
                     {:else if currentCatagory == 3}
                     <div class="intro-div text-1">
                         But I'd be lying if I said adding my own flair makes everything much more fun.
