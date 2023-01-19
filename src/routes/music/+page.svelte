@@ -6,10 +6,10 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '', title: '10s-20s'},
-        {id:'1', path: '', title: '90s-00s'},
-        {id:'2', path: '', title: '70s-80s'},
-        {id:'3', path: '', title: '50s-60s'},
+        {id:'0', path: '/images/cinema-the-marias-transformed.jpeg', title: '10s-20s'},
+        {id:'1', path: '/images/channelorange2-transformed.webp', title: '90s-00s'},
+        {id:'2', path: '/images/rex-orange-county-transformed.jpeg', title: '70s-80s'},
+        {id:'3', path: '/images/tyler-the-creator-transformed.webp', title: '50s-60s'},
 
 
     ]

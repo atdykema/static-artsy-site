@@ -49,7 +49,7 @@
                 }
                 
             },
-            {id:'3', path: '/images/spiderverse.png', data: 
+            {id:'3', path: '/images/midsommar-transformed.jpeg', data: 
                 {
                 title: "Jikanga Nai", 
                 artist: "Kirinji", 
@@ -74,7 +74,7 @@
                 
                 
             },
-            {id:'5', path: '/images/midsommar-transformed.jpeg', data: 
+            {id:'5', path: '/images/spiderverse.png', data: 
                 {
                 title: "Happiness", 
                 artist: "Rex Orange County", 
@@ -99,7 +99,7 @@
                 }
                 
             },
-            {id:'7', path: '/images/interstellar.jpg', data: 
+            {id:'7', path: '/images/interstellar2.jpg', data: 
                 {
                 title: "Garden Shed", 
                 artist: "Tyler, The Creator", 
