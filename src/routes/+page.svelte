@@ -8,7 +8,7 @@
         {id:'1', path: '', title: 'Hi there'},
         {id:'2', path: '', title: 'Hi there...?'},
         {id:'3', path: '', title: 'Still checking these captions?'},
-        {id:'4', path: '/images/mountains.jpg', title: 'Atleast someone is'},
+        {id:'4', path: '', title: 'Atleast someone is'},
 
     ]
 

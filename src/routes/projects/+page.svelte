@@ -6,10 +6,10 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/the-marias.jpg', title: '10s-20s'},
-        {id:'1', path: '/images/nirvana.webp', title: '90s-00s'},
-        {id:'2', path: '/images/pink-floyd2-transformed.webp', title: '70s-80s'},
-        {id:'3', path: '/images/the-beatles-transformed.jpeg', title: '50s-60s'},
+        {id:'0', path: '/images/projects1-transformed-transformed.png', title: 'UMass GreenEats'},
+        {id:'1', path: '/images/project2-transformed-transformed.png', title: 'Optimized File Search Application'},
+        {id:'2', path: '/images/project3-transformed-transformed.png', title: 'Dynamic Ray Tracer Algorithm'},
+        {id:'3', path: '/images/project4-transformed-transformed.png', title: 'SerenityOS Contributions'},
 
 
     ]
@@ -18,7 +18,7 @@
 
     const articles = {
         0: [
-            {id:'0', path: '/images/frank-ocean.jpg', data: 
+            {id:'0', path: '/images/projects1-transformed-transformed.png', data: 
                 {
                 title: "Nikes", 
                 artist: "Frank Ocean", 
@@ -28,86 +28,10 @@
                 desc_link: "2841610",
                 genius_link: "https://genius.com/Frank-ocean-nikes-lyrics"
                 }
-                
-            },
-            {id:'1', path: '/images/positions-ariana-grande.png', data: 
-                {
-                title: "Worst Behavior", 
-                artist: "Ariana Grande", 
-                album: "Positions", 
-                embed_link: "https://open.spotify.com/embed/track/6KIKaWKE9wV6mLjho3w61y?utm_source=generator",
-                desc: "",
-                desc_link: "6446041",
-                genius_link: "https://genius.com/Ariana-grande-worst-behavior-lyrics"
-                }
-                
-            },
-            {id:'2', path: '/images/the-marias.jpeg', data: 
-                {
-                title: "The Mice Inside This Room", 
-                artist: "The Marias", 
-                album: "CINEMA", 
-                embed_link: "https://open.spotify.com/embed/track/3Mqx9OWTEhBEeOEuUDklei?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-            },
-            {id:'3', path: '/images/kirinji-transformed.jpeg', data: 
-                {
-                title: "Jikanga Nai", 
-                artist: "Kirinji", 
-                album: "Aiwo Arudake, Subete", 
-                embed_link: "https://open.spotify.com/embed/track/4X6jKZPHkKLbrcEZu13VXK?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-            },
-            {id:'4', path: '/images/los-retros-transformed.jpeg', data: 
-                {
-                title: "Solo Tú", 
-                artist: "Los Retros", 
-                album: "Solo Tú", 
-                embed_link: "https://open.spotify.com/embed/track/6YbMkGhGkadLWnt2lIuHSz?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'5', path: '/images/rex-orange-county-transformed.jpeg', data: 
-                {
-                title: "Happiness", 
-                artist: "Rex Orange County", 
-                album: "Apricot Princess", 
-                embed_link: "https://open.spotify.com/embed/track/7aSyG7cskkG3zhfO2JLxq3?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'6', path: '/images/tyler-the-creator-transformed.webp', data: 
-                {
-                title: "Garden Shed", 
-                artist: "Tyler, The Creator", 
-                album: "Flower Boy", 
-                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
             }
-            
         ],
         1: [
-            {id:'0', path: '/images/gorillaz.webp', data: 
+            {id:'0', path: '/images/giraffe-search-transformed.jpeg', data: 
                 {
                 title: "Sleeping Powder", 
                 artist: "Gorillaz", 
@@ -117,56 +41,10 @@
                 desc_link: "",
                 genius_link: ""
                 }
-                
-            },
-            {id:'1', path: '/images/aphex-twin-transformed.jpeg', data: 
-                {
-                title: "#3", 
-                artist: "Aphex Twin", 
-                album: "Selected Ambient Works Volume II", 
-                embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'2', path: '/images/amy-winehouse.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'3', path: '/images/kurt-cobain.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'4', path: '/images/nsync.webp', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'5', path: '/images/britney-spears.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
+            }
         ],
         2: [
-            {id:'0', path: '/images/elo.jpg', data: 
+            {id:'0', path: '/images/raytracing-transformed.jpeg', data: 
                 {
                 title: "Sleeping Powder", 
                 artist: "Gorillaz", 
@@ -176,60 +54,22 @@
                 desc_link: "",
                 genius_link: ""
                 }
-                
-            },
-            {id:'1', path: '/images/pink-floyd.jpg', data: 
-                {
-                title: "#3", 
-                artist: "Aphex Twin", 
-                album: "Selected Ambient Works Volume II", 
-                embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
-                }
-                
-                
-            },
-            {id:'3', path: '/images/casiopea.jpg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
-            {id:'4', path: '/images/anri-transformed.webp', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
+            }
         ],
         3: [
-            {id:'0', path: '/images/jimmy-hendrix.webp', data: 
+            {id:'0', path: '/images/serenity-transformed-background.jpeg', data: 
                 {
                 title: "", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
                 }
-            },
-            {id:'1', path: '/images/abba-transformed.jpeg', data: 
-                {
-                title: "", 
-                artist: "", 
-                album: "", 
-                embed_link: ""
-                }
-            },
+            }
             
         ]
     }   
 
-    let currentArticle = -1
+    let currentArticle = 0
 
     function onKeyDown(e){
         switch(e.keyCode){
@@ -316,7 +156,6 @@
         grid-row-end: 12;
         -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
         backdrop-filter: blur(8px); /* Chrome and Opera */
-        background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;
         z-index: 100;
@@ -382,7 +221,7 @@
 
     .inner-hero{
         display: flex;
-        animation: afterAni 2s;
+        animation: afterAni2 4s;
         width: 100%;
         height: 100%;
         overflow-x: scroll;
@@ -424,6 +263,16 @@
             height: 0;
         }100%{
             height: 100%;
+            opacity: 100%;
+        }
+    }
+
+    @keyframes afterAni2{
+        0%{
+            opacity: 0%;
+        }50%{
+            opacity: 0%;
+        }100%{
             opacity: 100%;
         }
     }
@@ -488,13 +337,53 @@
         
     }
 
+    .article-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: center;
+        width: 45%;
+        height: 90%;
+        margin: 5px;
+    }
+
+    .article-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: center;
+        text-align: center;
+        width: 45%;
+        height: 90%;
+        margin: 5px;
+    }
+
+    .skills-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 20px 0px 20px 0px;
+        overflow: visible;
+    }
+
+    .skills-item{
+        overflow: visible;
+    }
+
 
 
 </style>
 
 <div class="main-hero-container">
 
-    {#key currentArticle, currentCatagory}
+    {#key currentCatagory, currentArticle}
         <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
     {/key}
 
@@ -504,21 +393,158 @@
     <div class="main-inner-layer grid">
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
-            {#if currentArticle < 0}
             <div class="main-hero" out:fade|local={{duration: 500}}>
-                <div class="inner-hero" >
-                    {#each articles[currentCatagory] as {id, path, data}}
-                        <HeroCard bind:currentArticle={currentArticle} id={id} path={path} data={data}></HeroCard>
-                    {/each}
+                <div class="inner-hero" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 90%; text-align: center; font-size: 3rem;" >
+                    {#if currentCatagory == 0}
+                        <div style="font-size: 5rem;">
+                            UMass GreenEats
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
+                            <div class="article-left">
+                                <div>
+                                    > Mobile application which ingests UMass' daily dining menus and produces healthy and sustainable meal plans based on users bio-metrics (gender, height, weight, allergens), allowing students to reduce individual carbon footprint.<br><br>
+                                    > Built as a team project at UMass' 2022 hackathon<br><br>
+                                    > Personally built out Selenium web scraper using Python for collecting and storing menu data in Firebase.
+
+                                </div>
+                            </div>
+                            <div class="article-right">
+                                <div style="overflow: visible; font-weight: bold">
+                                    November 12-13, 2022
+                                </div>
+                                <div style="overflow: visible; font-weight: bold">
+                                    🏆 Won Best Software hack<br>
+                                    🥈 Placed Second Place Overall (out of 65 teams/206 participants)
+                                </div>
+                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                    <div class="skills-item" style="overflow: visible;">
+                                        <div>
+                                            🐍 Python 🐍
+                                        </div>
+                                    </div>
+                                    <div class="skills-item">
+                                        <div>
+                                            🕊️ Swift 🕊️
+                                        </div>
+                                    </div>
+                                    <div class="skills-item">
+                                        <div>
+                                            ☁️ AWS ☁️
+                                        </div>
+                                    </div>
+                                    <div class="skills-item">
+                                        <div>
+                                            📃 Firebase 📃
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="https://devpost.com/software/umass-greeneats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; height 50px; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                    Devpost
+                                </a>
+                                <a href="https://github.com/vdsingh/UMass-GreenEats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    {:else if currentCatagory == 1}
+                        <div style="font-size: 5rem;">
+                            GiraffeSearch
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
+                            <div class="article-left">
+                                <div>
+                                    > Allows for enhanced Finder/grep-type capabilities using keywords and specified file/directory attributes.<br><br>
+                                    > Inspired by issues relating to search results of built-in Mac file search function, which return deeply embedded files before top level applications of which were unlikely to be ones I was looking for.<br><br>
+                                    > Incorporates speed-optimized, multithreaded BFS and DFS search algorithms, achieving 7x faster runtimes.<br><br>
+                                    > Designed image search algorithm based on color keywords using approximate image pixel-color composition.
+
+                                </div>
+                            </div>
+                            <div class="article-right">
+                                <div style="overflow: visible; font-weight: bold">
+                                    May-June, 2022
+                                </div>
+                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                    <div class="skills-item" style="overflow: visible;">
+                                        <div>
+                                            🐹 Golang 🐹
+                                        </div>
+                                    </div>
+                                    <div class="skills-item">
+                                        <div>
+                                            💿 Git 💿
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="https://github.com/atdykema/giraffeSearch_golang" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    {:else if currentCatagory == 2}
+                        <div style="font-size: 5rem;">
+                            Dynamic Raytracing Algorithm
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
+                            <div class="article-left">
+                                <div>
+                                    > Uses graphical computation algorithms, like M ̈oller-Trumbore ray-triangle intersection calculations and Phong shading.<br><br>
+                                    > Able to handle both reflection and refraction of light rays according to material composition of objects in scene.<br><br>
+                                    > Calculates individual ray position up to five times after initial light ray activation to achieve high detail render.
+                                </div>
+                            </div>
+                            <div class="article-right">
+                                <div style="overflow: visible; font-weight: bold">
+                                    April-May, 2022
+                                </div>
+                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                    <div class="skills-item" style="overflow: visible;">
+                                        <div>
+                                            📜 Javascript 📜
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {:else if currentCatagory == 3}
+                        <div style="font-size: 5rem;">
+                            SerenityOS Contributions
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
+                            <div class="article-left">
+                                <div>
+                                    > Link 1: Implemented math constant Phi (Golden Ratio) functionality to onboard Calculator application.<br><br>
+                                    > Inspired by onboard calculator's lacks high-level math functionality and user-friendliness for anything above basic calculation.<br><br>
+                                    > Wanted to bring more flexibility to the function of the application.<br><br>
+                                    > Link 2: Implemented ability to adjust time-of-day of events to 'Add Event' functionality of onboard Calender application.<br><br>
+                                    > Event functions in the onboard Calender lacked the ability to denote a specific time of an event, only allowing the specification of a day.<br><br>
+                                    > Worked to bring the calender application to a usable state.<br><br>   
+                                </div>
+                            </div>
+                            <div class="article-right">
+                                <div style="overflow: visible; font-weight: bold">
+                                    June-July, 2022
+                                </div>
+                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                    <div class="skills-item" style="overflow: visible;">
+                                        <div>
+                                            🖥️ C++ 🖥️
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/SerenityOS/serenity/pull/14228/commits/f21dc0fd3582a4e8c96cd530d8f7fb33075b4adf" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                    Github
+                                </a>
+                                <a href="https://github.com/SerenityOS/serenity/pull/14244/commits/4e1cd08ff2ceeddce2173aabb9780f5256e5c0b0" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    {/if}
                 </div>
             </div>
-            {:else}
-            <div class="main-hero" out:fade|local={{duration: 500}}>
-                <div class="inner-hero">
-                    <Article bind:currentArticle={currentArticle} id={articles[currentCatagory][currentArticle].id} path={articles[currentCatagory][currentArticle].path} data={articles[currentCatagory][currentArticle].data}></Article>
-                </div>
-            </div>
-            {/if}
         </div>
         {/key}
     </div>
