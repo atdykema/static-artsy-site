@@ -15,135 +15,69 @@
         0: [
             {id:'0', path: '/images/the-big-short.jpg', data: 
                 {
-                title: "Nikes", 
-                artist: "Frank Ocean", 
-                album: "Blonde", 
-                embed_link: "https://open.spotify.com/embed/track/19YKaevk2bce4odJkP5L22?utm_source=generator",
-                desc: "“Nikes” is a critique of the trappings of materialistic hedonism, with a frequent mention of Nike shoes, shiny gold and glitter, and fantasies of pleasure. The video version of this song features two competing voices (the album version does not), adding a sense of tension and conflict to the otherwise dreamy music. The song was the lead single from Frank Ocean’s highly anticipated third album, Blonde. It was released the day after his visual album Endless on Apple Music. The video is highly stylized and features race cars, nudity, immolation, partying and a devil.",
-                desc_link: "2841610",
-                genius_link: "https://genius.com/Frank-ocean-nikes-lyrics"
+                title: "The Big Short"
                 }
                 
             },
             {id:'1', path: '/images/inglorious-basterds.jpg', data: 
                 {
-                title: "Worst Behavior", 
-                artist: "Ariana Grande", 
-                album: "Positions", 
-                embed_link: "https://open.spotify.com/embed/track/6KIKaWKE9wV6mLjho3w61y?utm_source=generator",
-                desc: "",
-                desc_link: "6446041",
-                genius_link: "https://genius.com/Ariana-grande-worst-behavior-lyrics"
+                title: "Inglorious Basterds"
                 }
                 
             },
             {id:'2', path: '/images/the-batman-transformed.jpeg', data: 
                 {
-                title: "The Mice Inside This Room", 
-                artist: "The Marias", 
-                album: "CINEMA", 
-                embed_link: "https://open.spotify.com/embed/track/3Mqx9OWTEhBEeOEuUDklei?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "The Batman"
                 }
                 
             },
             {id:'3', path: '/images/midsommar-transformed.jpeg', data: 
                 {
-                title: "Jikanga Nai", 
-                artist: "Kirinji", 
-                album: "Aiwo Arudake, Subete", 
-                embed_link: "https://open.spotify.com/embed/track/4X6jKZPHkKLbrcEZu13VXK?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "Midsommar"
                 }
                 
             },
             {id:'4', path: '/images/princess-mononoke.jpg', data: 
                 {
-                title: "Solo Tú", 
-                artist: "Los Retros", 
-                album: "Solo Tú", 
-                embed_link: "https://open.spotify.com/embed/track/6YbMkGhGkadLWnt2lIuHSz?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "Princess Mononoke"
                 }
                 
                 
             },
             {id:'5', path: '/images/spiderverse.png', data: 
                 {
-                title: "Happiness", 
-                artist: "Rex Orange County", 
-                album: "Apricot Princess", 
-                embed_link: "https://open.spotify.com/embed/track/7aSyG7cskkG3zhfO2JLxq3?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "Into the Spiderverse"
                 }
                 
                 
             },
             {id:'6', path: '/images/the-social-network.jpg', data: 
                 {
-                title: "Garden Shed", 
-                artist: "Tyler, The Creator", 
-                album: "Flower Boy", 
-                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "The Social Network"
                 }
                 
             },
             {id:'7', path: '/images/interstellar2.jpg', data: 
                 {
-                title: "Garden Shed", 
-                artist: "Tyler, The Creator", 
-                album: "Flower Boy", 
-                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "Interstellar"
                 }
                 
             },
             {id:'8', path: '/images/django.jpg', data: 
                 {
-                title: "Garden Shed", 
-                artist: "Tyler, The Creator", 
-                album: "Flower Boy", 
-                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "Django"
                 }
                 
             },
             {id:'9', path: '/images/the-sting-transformed.jpeg', data: 
                 {
-                title: "Garden Shed", 
-                artist: "Tyler, The Creator", 
-                album: "Flower Boy", 
-                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "The String"
                 }
                 
             },
             {id:'10', path: '/images/whiplash.jpg', data: 
                 {
-                title: "Garden Shed", 
-                artist: "Tyler, The Creator", 
-                album: "Flower Boy", 
-                embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
-                desc: "",
-                desc_link: "",
-                genius_link: ""
+                title: "Whiplash"
                 }
                 
             }
@@ -236,9 +170,6 @@
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
-        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-        backdrop-filter: blur(8px); /* Chrome and Opera */
-        background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;
         z-index: 100;

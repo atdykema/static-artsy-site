@@ -69,10 +69,11 @@
     }
     
     .back-button{
-        opacity: 50%;
+        opacity: 75%;
         filter: invert(80%);
         -webkit-filter: invert(80%); /* Safari/Chrome */
         transition: .25s ease-in-out;
+        animation: fade 5s;
     }
 
     .article-back-button:hover > .back-button{
@@ -83,6 +84,32 @@
 
     }
 
+    .title{
+        opacity: 75%;
+        transition: .2s ease-in-out;
+        animation: fade 3s;
+    }
+
+    .title:hover{
+        opacity: 25%;
+        transition: .2s ease-in-out;
+    }
+
+    @keyframes fade {
+        0%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        80%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 75%;
+            transform: translateY(0%);
+        }
+    }
+
     
 
 </style>
@@ -91,14 +118,10 @@
     
     <div class="article-body-inner">
         
-
-        
-
-        <div class="article-right">
-            
-            {data.desc}
-            
+        <div class="title" style="display: flex; flex-direction:column; width: 100%; letter-spacing: 2rem; font-size: 7rem; text-align: center">
+            {data.title}
         </div>
+        
         
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->

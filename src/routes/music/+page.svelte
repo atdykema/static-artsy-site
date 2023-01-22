@@ -20,7 +20,7 @@
         0: [
             {id:'0', path: '/images/frank-ocean.jpg', data: 
                 {
-                title: "Nikes", 
+                title: "Frank Ocean", 
                 artist: "Frank Ocean", 
                 album: "Blonde", 
                 embed_link: "https://open.spotify.com/embed/track/19YKaevk2bce4odJkP5L22?utm_source=generator",
@@ -32,7 +32,7 @@
             },
             {id:'1', path: '/images/positions-ariana-grande.png', data: 
                 {
-                title: "Worst Behavior", 
+                title: "Ariana Grande", 
                 artist: "Ariana Grande", 
                 album: "Positions", 
                 embed_link: "https://open.spotify.com/embed/track/6KIKaWKE9wV6mLjho3w61y?utm_source=generator",
@@ -44,7 +44,7 @@
             },
             {id:'2', path: '/images/the-marias.jpeg', data: 
                 {
-                title: "The Mice Inside This Room", 
+                title: "The Marias", 
                 artist: "The Marias", 
                 album: "CINEMA", 
                 embed_link: "https://open.spotify.com/embed/track/3Mqx9OWTEhBEeOEuUDklei?utm_source=generator",
@@ -56,7 +56,7 @@
             },
             {id:'3', path: '/images/kirinji-transformed.jpeg', data: 
                 {
-                title: "Jikanga Nai", 
+                title: "Kirinji", 
                 artist: "Kirinji", 
                 album: "Aiwo Arudake, Subete", 
                 embed_link: "https://open.spotify.com/embed/track/4X6jKZPHkKLbrcEZu13VXK?utm_source=generator",
@@ -68,7 +68,7 @@
             },
             {id:'4', path: '/images/los-retros-transformed.jpeg', data: 
                 {
-                title: "Solo Tú", 
+                title: "Los Retros", 
                 artist: "Los Retros", 
                 album: "Solo Tú", 
                 embed_link: "https://open.spotify.com/embed/track/6YbMkGhGkadLWnt2lIuHSz?utm_source=generator",
@@ -81,7 +81,7 @@
             },
             {id:'5', path: '/images/rex-orange-county-transformed.jpeg', data: 
                 {
-                title: "Happiness", 
+                title: "Rex Orange County", 
                 artist: "Rex Orange County", 
                 album: "Apricot Princess", 
                 embed_link: "https://open.spotify.com/embed/track/7aSyG7cskkG3zhfO2JLxq3?utm_source=generator",
@@ -94,7 +94,7 @@
             },
             {id:'6', path: '/images/tyler-the-creator-transformed.webp', data: 
                 {
-                title: "Garden Shed", 
+                title: "Tyler, The Creator", 
                 artist: "Tyler, The Creator", 
                 album: "Flower Boy", 
                 embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
@@ -109,7 +109,7 @@
         1: [
             {id:'0', path: '/images/gorillaz.webp', data: 
                 {
-                title: "Sleeping Powder", 
+                title: "Gorillaz", 
                 artist: "Gorillaz", 
                 album: "Sleeping Powder", 
                 embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
@@ -121,7 +121,7 @@
             },
             {id:'1', path: '/images/aphex-twin-transformed.jpeg', data: 
                 {
-                title: "#3", 
+                title: "Aphex Twin", 
                 artist: "Aphex Twin", 
                 album: "Selected Ambient Works Volume II", 
                 embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
@@ -134,7 +134,7 @@
             },
             {id:'2', path: '/images/amy-winehouse.jpg', data: 
                 {
-                title: "", 
+                title: "Amy Winehouse", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -142,7 +142,7 @@
             },
             {id:'3', path: '/images/kurt-cobain.jpg', data: 
                 {
-                title: "", 
+                title: "Nirvana", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -150,7 +150,7 @@
             },
             {id:'4', path: '/images/nsync.webp', data: 
                 {
-                title: "", 
+                title: "N*SYNC", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -158,7 +158,7 @@
             },
             {id:'5', path: '/images/britney-spears.jpg', data: 
                 {
-                title: "", 
+                title: "Britney Spears", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -168,7 +168,7 @@
         2: [
             {id:'0', path: '/images/elo.jpg', data: 
                 {
-                title: "Sleeping Powder", 
+                title: "Electric Light Orchestra", 
                 artist: "Gorillaz", 
                 album: "Sleeping Powder", 
                 embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
@@ -180,7 +180,7 @@
             },
             {id:'1', path: '/images/pink-floyd.jpg', data: 
                 {
-                title: "#3", 
+                title: "Pink Floyd", 
                 artist: "Aphex Twin", 
                 album: "Selected Ambient Works Volume II", 
                 embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
@@ -193,7 +193,7 @@
             },
             {id:'3', path: '/images/casiopea.jpg', data: 
                 {
-                title: "", 
+                title: "Casiopea", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -201,7 +201,7 @@
             },
             {id:'4', path: '/images/anri-transformed.webp', data: 
                 {
-                title: "", 
+                title: "Anri", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -211,7 +211,7 @@
         3: [
             {id:'0', path: '/images/jimmy-hendrix.webp', data: 
                 {
-                title: "", 
+                title: "Jimmy Hendrix", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -219,7 +219,7 @@
             },
             {id:'1', path: '/images/abba-transformed.jpeg', data: 
                 {
-                title: "", 
+                title: "Abba", 
                 artist: "", 
                 album: "", 
                 embed_link: ""
@@ -314,9 +314,6 @@
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
-        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-        backdrop-filter: blur(8px); /* Chrome and Opera */
-        background-color: rgba(0, 0, 0, 0.15); 
         animation: ani 3s;
         color: white;
         z-index: 100;
