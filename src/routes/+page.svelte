@@ -4,11 +4,11 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '', title: 'Hi there!'},
-        {id:'1', path: '', title: 'Hi there'},
-        {id:'2', path: '', title: 'Hi there...?'},
-        {id:'3', path: '', title: 'Still checking these captions?'},
-        {id:'4', path: '', title: 'Atleast someone is'},
+        {id:'0', path: '', title: ''},
+        {id:'1', path: '', title: ''},
+        {id:'2', path: '', title: ''},
+        {id:'3', path: '', title: ''},
+        {id:'4', path: '', title: ''},
 
     ]
 
@@ -417,8 +417,8 @@
                     <div class="intro-div text-2">
                         Take a look at the nav bar for some other stuff about me (you need to hover at the top to see it) 
                     </div>
-                    <div class="intro-div text-3">
-                        And most importantly, enjoy yourself!
+                    <div class="intro-div text-late">
+                        Toodles
                     </div>
                     {/if}
 

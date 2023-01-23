@@ -6,10 +6,10 @@
     import { base } from '$app/paths'
 
     const catagories = [
-        {id:'0', path: '/images/projects1-transformed-transformed.png', title: 'UMass GreenEats'},
-        {id:'1', path: '/images/project2-transformed-transformed.png', title: 'Optimized File Search Application'},
-        {id:'2', path: '/images/project3-transformed-transformed.png', title: 'Dynamic Ray Tracer Algorithm'},
-        {id:'3', path: '/images/project4-transformed-transformed.png', title: 'SerenityOS Contributions'},
+        {id:'0', path: '', title: 'UMass GreenEats'},
+        {id:'1', path: '', title: 'Optimized File Search Application'},
+        {id:'2', path: '', title: 'Dynamic Ray Tracer Algorithm'},
+        {id:'3', path: '', title: 'SerenityOS Contributions'},
 
 
     ]
@@ -31,7 +31,7 @@
             }
         ],
         1: [
-            {id:'0', path: '/images/giraffe-search-transformed.jpeg', data: 
+            {id:'0', path: '/images/project2-transformed-transformed.png', data: 
                 {
                 title: "Sleeping Powder", 
                 artist: "Gorillaz", 
@@ -44,7 +44,7 @@
             }
         ],
         2: [
-            {id:'0', path: '/images/raytracing-transformed.jpeg', data: 
+            {id:'0', path: '/images/project3-transformed-transformed.png', data: 
                 {
                 title: "Sleeping Powder", 
                 artist: "Gorillaz", 
@@ -57,7 +57,7 @@
             }
         ],
         3: [
-            {id:'0', path: '/images/serenity-transformed-background.jpeg', data: 
+            {id:'0', path: '/images/project4-transformed-transformed.png', data: 
                 {
                 title: "", 
                 artist: "", 
@@ -423,6 +423,16 @@
         text-orientation: mixed;
         font-size: 7rem;
         font-weight: bold;
+        color: rgba(255, 255, 255, 0.5);
+        transition: 1s ease;
+    }
+
+    .project-date{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 4rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.25);
     }
 
 
@@ -431,7 +441,7 @@
 
 <div class="main-hero-container">
 
-    {#key currentCatagory, currentArticle}
+    {#key currentCatagory}
         <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
     {/key}
 
@@ -459,13 +469,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="project-date text-3" style="overflow: visible; font-weight: bold">
+                                November 12-13, 2022
+                            </div>
                             <div class="project-title text-1">
                                 UMass GreenEats
                             </div>
+                            
                             <div class="article-right">
-                                <div class="text-3" style="overflow: visible; font-weight: bold">
-                                    November 12-13, 2022
-                                </div>
+                    
                                 <div class="text-3" style="overflow: visible; font-weight: bold">
                                     🏆 Won Best Software hack<br>
                                     🥈 Placed Second Place Overall (out of 65 teams/206 participants)
@@ -521,13 +533,14 @@
 
                                 </div>
                             </div>
+                            <div class="project-date text-3" style="overflow: visible; font-weight: bold">
+                                May-June, 2022
+                            </div>
                             <div class="project-title text-1" style="font-size: 5rem;">
                                 GiraffeSearch
                             </div>
                             <div class="article-right">
-                                <div class="text-3" style="overflow: visible; font-weight: bold">
-                                    May-June, 2022
-                                </div>
+                            
                                 <div class="skills-list text-3" style="overflow: visible; font-style:oblique;">
                                     <div class="skills-item" style="overflow: visible;">
                                         <div>
@@ -557,13 +570,14 @@
                                     
                                 </div>
                             </div>
+                            <div class="project-date text-3" style="overflow: visible; font-weight: bold">
+                                April-May, 2022
+                            </div>
                             <div class="project-title text-1" style="font-size: 5rem;">
                                 Dynamic Raytracing Algorithm
                             </div>
                             <div class="article-right text-3">
-                                <div style="overflow: visible; font-weight: bold">
-                                    April-May, 2022
-                                </div>
+                                
                                 <div class="skills-list" style="overflow: visible; font-style:oblique;">
                                     <div class="skills-item" style="overflow: visible;">
                                         <div>
@@ -586,13 +600,15 @@
                                     <div class="text-late">> Worked to bring the calender application to a usable state.<br><br></div>   
                                 </div>
                             </div>
-                            <div class="project-title" style="font-size: 5rem;">
+                            
+                            <div class="project-date text-3" style="overflow: visible; font-weight: bold">
+                                June-July, 2022
+                            </div>
+                            <div class="project-title text-1" style="font-size: 5rem;">
                                 SerenityOS Contributions
                             </div>
                             <div class="article-right">
-                                <div class="text-3" style="overflow: visible; font-weight: bold">
-                                    June-July, 2022
-                                </div>
+                                
                                 <div class="skills-list text-3" style="overflow: visible; font-style:oblique;">
                                     <div class="skills-item" style="overflow: visible;">
                                         <div>
