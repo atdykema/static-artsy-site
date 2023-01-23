@@ -188,10 +188,8 @@
                 desc_link: "",
                 genius_link: ""
                 }
-                
-                
             },
-            {id:'3', path: '/images/casiopea.jpg', data: 
+            {id:'2', path: '/images/casiopea.jpg', data: 
                 {
                 title: "Casiopea", 
                 artist: "", 
@@ -199,7 +197,7 @@
                 embed_link: ""
                 }
             },
-            {id:'4', path: '/images/anri-transformed.webp', data: 
+            {id:'3', path: '/images/anri-transformed.webp', data: 
                 {
                 title: "Anri", 
                 artist: "", 

@@ -154,8 +154,6 @@
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
-        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-        backdrop-filter: blur(8px); /* Chrome and Opera */
         animation: ani 3s;
         color: white;
         z-index: 100;
@@ -337,6 +335,21 @@
         
     }
 
+    @keyframes fade {
+        0%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        80%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0%);
+        }
+    }
+
     .article-left{
         display: flex;
         flex-direction: column;
@@ -377,6 +390,41 @@
         overflow: visible;
     }
 
+    .text-1{
+        animation: fade 3s;
+    }
+
+    .text-2{
+        animation: fade 3.5s;
+    }
+
+    .text-3{
+        animation: fade 4s;
+    }
+
+    .text-4{
+        animation: fade 4.5s;
+    }
+
+    .text-5{
+        animation: fade 5s;
+    }
+
+    .text-6{
+        animation: fade 5.5s;
+    }
+
+    .text-late{
+        animation: fade 6s;
+    }
+
+    .project-title{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 7rem;
+        font-weight: bold;
+    }
+
 
 
 </style>
@@ -396,27 +444,33 @@
             <div class="main-hero" out:fade|local={{duration: 500}}>
                 <div class="inner-hero" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 90%; text-align: center; font-size: 3rem;" >
                     {#if currentCatagory == 0}
-                        <div style="font-size: 5rem;">
-                            UMass GreenEats
-                        </div>
+                    
                         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
                             <div class="article-left">
                                 <div>
-                                    > Mobile application which ingests UMass' daily dining menus and produces healthy and sustainable meal plans based on users bio-metrics (gender, height, weight, allergens), allowing students to reduce individual carbon footprint.<br><br>
-                                    > Built as a team project at UMass' 2022 hackathon<br><br>
-                                    > Personally built out Selenium web scraper using Python for collecting and storing menu data in Firebase.
-
+                                    <div class="text-2">
+                                        > Mobile application which ingests UMass' daily dining menus and produces healthy and sustainable meal plans based on users bio-metrics (gender, height, weight, allergens), allowing students to reduce individual carbon footprint.<br><br>
+                                    </div>
+                                    <div class="text-4">
+                                        > Built as a team project at UMass' 2022 hackathon<br><br>
+                                    </div>
+                                    <div class="text-6">
+                                        > Personally built out Selenium web scraper using Python for collecting and storing menu data in Firebase.
+                                    </div>
                                 </div>
                             </div>
+                            <div class="project-title text-1">
+                                UMass GreenEats
+                            </div>
                             <div class="article-right">
-                                <div style="overflow: visible; font-weight: bold">
+                                <div class="text-3" style="overflow: visible; font-weight: bold">
                                     November 12-13, 2022
                                 </div>
-                                <div style="overflow: visible; font-weight: bold">
+                                <div class="text-3" style="overflow: visible; font-weight: bold">
                                     🏆 Won Best Software hack<br>
                                     🥈 Placed Second Place Overall (out of 65 teams/206 participants)
                                 </div>
-                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                <div class="skills-list text-5" style="overflow: visible; font-style:oblique;">
                                     <div class="skills-item" style="overflow: visible;">
                                         <div>
                                             🐍 Python 🐍
@@ -439,33 +493,42 @@
                                     </div>
 
                                 </div>
-                                <a href="https://devpost.com/software/umass-greeneats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; height 50px; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-late" href="https://devpost.com/software/umass-greeneats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; height 50px; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
                                     Devpost
                                 </a>
-                                <a href="https://github.com/vdsingh/UMass-GreenEats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-late" href="https://github.com/vdsingh/UMass-GreenEats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
                                     Github
                                 </a>
                             </div>
                         </div>
                     {:else if currentCatagory == 1}
-                        <div style="font-size: 5rem;">
-                            GiraffeSearch
-                        </div>
+                        
                         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
                             <div class="article-left">
                                 <div>
-                                    > Allows for enhanced Finder/grep-type capabilities using keywords and specified file/directory attributes.<br><br>
-                                    > Inspired by issues relating to search results of built-in Mac file search function, which return deeply embedded files before top level applications of which were unlikely to be ones I was looking for.<br><br>
-                                    > Incorporates speed-optimized, multithreaded BFS and DFS search algorithms, achieving 7x faster runtimes.<br><br>
-                                    > Designed image search algorithm based on color keywords using approximate image pixel-color composition.
+                                    <div class="text-2">
+                                        > Allows for enhanced Finder/grep-type capabilities using keywords and specified file/directory attributes.<br><br>
+                                    </div>
+                                    <div class="text-4">
+                                        > Inspired by issues relating to search results of built-in Mac file search function, which return deeply embedded files before top level applications of which were unlikely to be ones I was looking for.<br><br>
+                                    </div>
+                                    <div class="text-6">
+                                        > Incorporates speed-optimized, multithreaded BFS and DFS search algorithms, achieving 7x faster runtimes.<br><br>
+                                    </div>
+                                    <div class="text-late">
+                                        > Designed image search algorithm based on color keywords using approximate image pixel-color composition.
+                                    </div>
 
                                 </div>
                             </div>
+                            <div class="project-title text-1" style="font-size: 5rem;">
+                                GiraffeSearch
+                            </div>
                             <div class="article-right">
-                                <div style="overflow: visible; font-weight: bold">
+                                <div class="text-3" style="overflow: visible; font-weight: bold">
                                     May-June, 2022
                                 </div>
-                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                <div class="skills-list text-3" style="overflow: visible; font-style:oblique;">
                                     <div class="skills-item" style="overflow: visible;">
                                         <div>
                                             🐹 Golang 🐹
@@ -478,24 +541,26 @@
                                     </div>
 
                                 </div>
-                                <a href="https://github.com/atdykema/giraffeSearch_golang" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-5" href="https://github.com/atdykema/giraffeSearch_golang" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
                                     Github
                                 </a>
                             </div>
                         </div>
                     {:else if currentCatagory == 2}
-                        <div style="font-size: 5rem;">
-                            Dynamic Raytracing Algorithm
-                        </div>
+                        
                         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
                             <div class="article-left">
                                 <div>
-                                    > Uses graphical computation algorithms, like M ̈oller-Trumbore ray-triangle intersection calculations and Phong shading.<br><br>
-                                    > Able to handle both reflection and refraction of light rays according to material composition of objects in scene.<br><br>
-                                    > Calculates individual ray position up to five times after initial light ray activation to achieve high detail render.
+                                    <div class="text-2">> Uses graphical computation algorithms, like M ̈oller-Trumbore ray-triangle intersection calculations and Phong shading.<br><br></div>
+                                    <div class="text-4">> Able to handle both reflection and refraction of light rays according to material composition of objects in scene.<br><br></div>
+                                    <div class="text-5">> Calculates individual ray position up to five times after initial light ray activation to achieve high detail render.</div>
+                                    
                                 </div>
                             </div>
-                            <div class="article-right">
+                            <div class="project-title text-1" style="font-size: 5rem;">
+                                Dynamic Raytracing Algorithm
+                            </div>
+                            <div class="article-right text-3">
                                 <div style="overflow: visible; font-weight: bold">
                                     April-May, 2022
                                 </div>
@@ -509,35 +574,36 @@
                             </div>
                         </div>
                     {:else if currentCatagory == 3}
-                        <div style="font-size: 5rem;">
-                            SerenityOS Contributions
-                        </div>
+                        
                         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
                             <div class="article-left">
                                 <div>
-                                    > Link 1: Implemented math constant Phi (Golden Ratio) functionality to onboard Calculator application.<br><br>
-                                    > Inspired by onboard calculator's lacks high-level math functionality and user-friendliness for anything above basic calculation.<br><br>
-                                    > Wanted to bring more flexibility to the function of the application.<br><br>
-                                    > Link 2: Implemented ability to adjust time-of-day of events to 'Add Event' functionality of onboard Calender application.<br><br>
-                                    > Event functions in the onboard Calender lacked the ability to denote a specific time of an event, only allowing the specification of a day.<br><br>
-                                    > Worked to bring the calender application to a usable state.<br><br>   
+                                    <div class="text-2">> Link 1: Implemented math constant Phi (Golden Ratio) functionality to onboard Calculator application.<br><br></div>
+                                    <div class="text-4">> Inspired by onboard calculator's lacks high-level math functionality and user-friendliness for anything above basic calculation.<br><br></div>
+                                    <div class="text-6">> Wanted to bring more flexibility to the function of the application.<br><br></div>
+                                    <div class="text-late">> Link 2: Implemented ability to adjust time-of-day of events to 'Add Event' functionality of onboard Calender application.<br><br></div>
+                                    <div class="text-late">> Event functions in the onboard Calender lacked the ability to denote a specific time of an event, only allowing the specification of a day.<br><br></div>
+                                    <div class="text-late">> Worked to bring the calender application to a usable state.<br><br></div>   
                                 </div>
                             </div>
+                            <div class="project-title" style="font-size: 5rem;">
+                                SerenityOS Contributions
+                            </div>
                             <div class="article-right">
-                                <div style="overflow: visible; font-weight: bold">
+                                <div class="text-3" style="overflow: visible; font-weight: bold">
                                     June-July, 2022
                                 </div>
-                                <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                                <div class="skills-list text-3" style="overflow: visible; font-style:oblique;">
                                     <div class="skills-item" style="overflow: visible;">
                                         <div>
                                             🖥️ C++ 🖥️
                                         </div>
                                     </div>
                                 </div>
-                                <a href="https://github.com/SerenityOS/serenity/pull/14228/commits/f21dc0fd3582a4e8c96cd530d8f7fb33075b4adf" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14228/commits/f21dc0fd3582a4e8c96cd530d8f7fb33075b4adf" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
                                     Github
                                 </a>
-                                <a href="https://github.com/SerenityOS/serenity/pull/14244/commits/4e1cd08ff2ceeddce2173aabb9780f5256e5c0b0" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14244/commits/4e1cd08ff2ceeddce2173aabb9780f5256e5c0b0" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
                                     Github
                                 </a>
                             </div>

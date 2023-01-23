@@ -163,13 +163,13 @@
                     <div class="li-overlay">Projects</div>
                     <a href="{base}/projects">Projects</a>
                 </div>
-                <div class="nav-item">
-                    <div class="li-overlay">Film</div>
-                    <a href="{base}/film">Film</a>
-                </div>
                 <div class="nav-item">  
                     <div class="li-overlay">Music</div>
                     <a href="{base}/music">Music</a>
+                </div>
+                <div class="nav-item">
+                    <div class="li-overlay">Film</div>
+                    <a href="{base}/film">Film</a>
                 </div>
             </ul>
         </div>
