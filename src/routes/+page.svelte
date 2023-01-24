@@ -381,13 +381,13 @@
                     </div>
                     {:else if currentCatagory == 1}
                     <div class="intro-div text-1">
-                        I really enjoy listening to music, fine-tuning my audio equipment to get the most of what I comsume.
+                        Currently, I am an undergratuate student at University of Massachusetts Amherst studying Computer Science
                     </div>
                     <div class="intro-div text-2">
-                        Outer space excites me, I love keeping up to date with all things space tech and exploration.
+                        I love listening to and expanding my horizons through music, as well as keeping up with all things space tech and exploration.
                     </div>
                     <div class="intro-div text-3">
-                        I'm getting better at picking up new books, I know theres so much out there to find.
+                        I'm getting better at picking up new books, so much learning to be done!
                     </div>
                     {:else if currentCatagory == 2}
                     <div class="intro-div text-1">
