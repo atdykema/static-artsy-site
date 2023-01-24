@@ -15,69 +15,80 @@
         0: [
             {id:'0', path: '/images/the-big-short.jpg', data: 
                 {
-                title: "The Big Short"
+                title: "The Big Short",
+                href: "https://www.imdb.com/title/tt1596363/"
                 }
                 
             },
             {id:'1', path: '/images/inglorious-basterds.jpg', data: 
                 {
-                title: "Inglorious Basterds"
+                title: "Inglorious Basterds",
+                href: "https://www.imdb.com/title/tt0361748/"
                 }
                 
             },
             {id:'2', path: '/images/the-batman-transformed.jpeg', data: 
                 {
-                title: "The Batman"
+                title: "The Batman",
+                href: "https://www.imdb.com/title/tt1877830/"
                 }
                 
             },
             {id:'3', path: '/images/midsommar-transformed.jpeg', data: 
                 {
-                title: "Midsommar"
+                title: "Midsommar",
+                href: "https://www.imdb.com/title/tt8772262/"
                 }
                 
             },
             {id:'4', path: '/images/princess-mononoke.jpg', data: 
                 {
-                title: "Princess Mononoke"
+                title: "Princess Mononoke",
+                href: "https://www.imdb.com/title/tt0119698/"
                 }
                 
                 
             },
             {id:'5', path: '/images/spiderverse.png', data: 
                 {
-                title: "Into the Spiderverse"
+                title: "Into the Spiderverse",
+                href: "https://www.imdb.com/title/tt4633694/"
                 }
                 
                 
             },
             {id:'6', path: '/images/the-social-network.jpg', data: 
                 {
-                title: "The Social Network"
+                title: "The Social Network",
+                href: "https://www.imdb.com/title/tt1285016/"
                 }
                 
             },
             {id:'7', path: '/images/interstellar2.jpg', data: 
                 {
-                title: "Interstellar"
+                title: "Interstellar",
+                href: "https://www.imdb.com/title/tt0816692/"
                 }
                 
             },
             {id:'8', path: '/images/django.jpg', data: 
                 {
-                title: "Django"
+                title: "Django",
+                href: "https://www.imdb.com/title/tt1853728/"
                 }
                 
             },
             {id:'9', path: '/images/the-sting-transformed.jpeg', data: 
                 {
-                title: "The String"
+                title: "The String",
+                href: "https://www.imdb.com/title/tt0070735/"
                 }
                 
             },
             {id:'10', path: '/images/whiplash.jpg', data: 
                 {
-                title: "Whiplash"
+                title: "Whiplash",
+                href: "https://www.imdb.com/title/tt2582802/"
                 }
                 
             }

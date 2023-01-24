@@ -119,7 +119,9 @@
     <div class="article-body-inner">
         
         <div class="title" style="display: flex; flex-direction:column; width: 100%; letter-spacing: 2rem; font-size: 7rem; text-align: center">
-            {data.title}
+            <a href="{data.href}" style="width: 100%; letter-spacing: 2rem; font-size: 7rem; text-align: center" target="_blank" rel="noreferrer">
+                {data.title}
+            </a>
         </div>
         
         

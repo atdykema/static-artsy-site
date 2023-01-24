@@ -26,7 +26,8 @@
                 embed_link: "https://open.spotify.com/embed/track/19YKaevk2bce4odJkP5L22?utm_source=generator",
                 desc: "“Nikes” is a critique of the trappings of materialistic hedonism, with a frequent mention of Nike shoes, shiny gold and glitter, and fantasies of pleasure. The video version of this song features two competing voices (the album version does not), adding a sense of tension and conflict to the otherwise dreamy music. The song was the lead single from Frank Ocean’s highly anticipated third album, Blonde. It was released the day after his visual album Endless on Apple Music. The video is highly stylized and features race cars, nudity, immolation, partying and a devil.",
                 desc_link: "2841610",
-                genius_link: "https://genius.com/Frank-ocean-nikes-lyrics"
+                genius_link: "https://genius.com/Frank-ocean-nikes-lyrics",
+                href: "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM?si=LsNo6b39Rb65H-f7tAITng"
                 }
                 
             },
@@ -38,7 +39,8 @@
                 embed_link: "https://open.spotify.com/embed/track/6KIKaWKE9wV6mLjho3w61y?utm_source=generator",
                 desc: "",
                 desc_link: "6446041",
-                genius_link: "https://genius.com/Ariana-grande-worst-behavior-lyrics"
+                genius_link: "https://genius.com/Ariana-grande-worst-behavior-lyrics",
+                href: "https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR?si=-SMPOdXvRciLh0ulBqWJlg"
                 }
                 
             },
@@ -50,7 +52,8 @@
                 embed_link: "https://open.spotify.com/embed/track/3Mqx9OWTEhBEeOEuUDklei?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx?si=4gkmzW6gQD6G5zbz3zCfMQ"
                 }
                 
             },
@@ -62,7 +65,8 @@
                 embed_link: "https://open.spotify.com/embed/track/4X6jKZPHkKLbrcEZu13VXK?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/0O1UtbTe4ca7HabaiMhYZ7?si=6GVj5UqMRiOj7aedIufjXg"
                 }
                 
             },
@@ -74,7 +78,8 @@
                 embed_link: "https://open.spotify.com/embed/track/6YbMkGhGkadLWnt2lIuHSz?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/0qraFJK6boYSp4ZMMX4PzG?si=KccaKmhASJiuiK3kNm2_lw"
                 }
                 
                 
@@ -87,7 +92,8 @@
                 embed_link: "https://open.spotify.com/embed/track/7aSyG7cskkG3zhfO2JLxq3?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/7pbDxGE6nQSZVfiFdq9lOL?si=99-oZF8YSMuSg3-SNDcuDQ"
                 }
                 
                 
@@ -100,7 +106,8 @@
                 embed_link: "https://open.spotify.com/embed/track/6ACiYjq5Q7e6BlhZEHz7cd?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=_FfKexR3RfaXcyMAS5EFIA"
                 }
                 
             }
@@ -115,7 +122,8 @@
                 embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
                 desc: "“Sleeping Powder” is about 2-D’s drug addiction. In the Gorillaz backstory, 2-D suffered a number of head injuries—in fact, he earned the name 2-D in Phase 1 because of the two dents in his head that formed when Murdoc hit him with his car. 2-D’s head trauma later caused him to become addicted to painkillers. The song was exclusively released through the Gorillaz app as a part of Phase 4 on June 8, 2017, but the music video appeared online the same day. According to Damon Albarn during a Gorillaz concert on June 8th, 2017, “Sleeping Powder” was written as a response to a portion of Gorillaz fans that complained about the lowered emphasis of 2D on their fifth studio album Humanz.",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ?si=bZlKQk2jQFildn_jJG3nTw"
                 }
                 
             },
@@ -127,7 +135,8 @@
                 embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG?si=oKmWNG5dRAeMdE_wQS-1ZQ"
                 }
                 
                 
@@ -137,7 +146,8 @@
                 title: "Amy Winehouse", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/6Q192DXotxtaysaqNPy5yR?si=koJJZNY7SnydONdCeFXF8g"
                 }
             },
             {id:'3', path: '/images/kurt-cobain.jpg', data: 
@@ -145,7 +155,8 @@
                 title: "Nirvana", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh?si=tiwHN6tAQDaxdKSfyNAZvA"
                 }
             },
             {id:'4', path: '/images/nsync.webp', data: 
@@ -153,7 +164,8 @@
                 title: "N*SYNC", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/6Ff53KvcvAj5U7Z1vojB5o?si=zhJJv2wRSC2o_3tu7oR_mw"
                 }
             },
             {id:'5', path: '/images/britney-spears.jpg', data: 
@@ -161,7 +173,8 @@
                 title: "Britney Spears", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/26dSoYclwsYLMAKD3tpOr4?si=kfGXg0EhRjS-gw9-R1Icsg"
                 }
             },
         ],
@@ -174,7 +187,8 @@
                 embed_link: "https://open.spotify.com/embed/track/5pE9vMyvVNOpZFutt6lyy4?utm_source=generator",
                 desc: "“Sleeping Powder” is about 2-D’s drug addiction. In the Gorillaz backstory, 2-D suffered a number of head injuries—in fact, he earned the name 2-D in Phase 1 because of the two dents in his head that formed when Murdoc hit him with his car. 2-D’s head trauma later caused him to become addicted to painkillers. The song was exclusively released through the Gorillaz app as a part of Phase 4 on June 8, 2017, but the music video appeared online the same day. According to Damon Albarn during a Gorillaz concert on June 8th, 2017, “Sleeping Powder” was written as a response to a portion of Gorillaz fans that complained about the lowered emphasis of 2D on their fifth studio album Humanz.",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/7jefIIksOi1EazgRTfW2Pk?si=AUnND2pvQxyL0oyalYrSew"
                 }
                 
             },
@@ -186,7 +200,8 @@
                 embed_link: "https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator",
                 desc: "",
                 desc_link: "",
-                genius_link: ""
+                genius_link: "",
+                href: "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=MsmWxLSZR-S39pHlUFAgnQ"
                 }
             },
             {id:'2', path: '/images/casiopea.jpg', data: 
@@ -194,7 +209,8 @@
                 title: "Casiopea", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/0lRXEutklZUeNdWIJA1NI0?si=VPAtXc3BS_eTV9MAZjcP_w"
                 }
             },
             {id:'3', path: '/images/anri-transformed.webp', data: 
@@ -202,7 +218,17 @@
                 title: "Anri", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/0xGtOrmB2hnrNRLG3vhpSo?si=Lar-D0yCSba93K7FLbIWPw"
+                }
+            },
+            {id:'4', path: '/images/queen.jpg', data: 
+                {
+                title: "Queen", 
+                artist: "", 
+                album: "", 
+                embed_link: "",
+                href: "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d?si=4xQ_vfFlTW2NjLY76K9W7Q"
                 }
             },
         ],
@@ -212,7 +238,8 @@
                 title: "Jimmy Hendrix", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4?si=MjBlkutKRxWF89RDAkb9lw"
                 }
             },
             {id:'1', path: '/images/abba-transformed.jpeg', data: 
@@ -220,7 +247,35 @@
                 title: "Abba", 
                 artist: "", 
                 album: "", 
-                embed_link: ""
+                embed_link: "",
+                href: "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV?si=faH6Xr1uT8yROkpHZ48pTA"
+                }
+            },
+            {id:'2', path: '/images/king-crimson.jpg', data: 
+                {
+                title: "King Crimson", 
+                artist: "", 
+                album: "", 
+                embed_link: "",
+                href: "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi?si=dptJnsYPR0mLMM8W_eVmcg"
+                }
+            },
+            {id:'3', path: '/images/the-beatles-transformed.jpeg', data: 
+                {
+                title: "The Beatles", 
+                artist: "", 
+                album: "", 
+                embed_link: "",
+                href: "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2?si=RjWjaQDgTOO_RXf3z2Jy1A"
+                }
+            },
+            {id:'4', path: '/images/hank-williams.jpg', data: 
+                {
+                title: "Hank Williams", 
+                artist: "", 
+                album: "", 
+                embed_link: "",
+                href: "https://open.spotify.com/artist/1FClsNYBUoNFtGgzeG74dW?si=ZAOV1WfoTxS74vBH-jUcIg"
                 }
             },
             

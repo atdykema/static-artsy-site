@@ -1,6 +1,6 @@
 <script>
     import { fade } from 'svelte/transition'
-    import CatagoryCard from "$lib/components/CatagoryCard.svelte";
+    import CatagoryCardProject from "$lib/components/CatagoryCardProject.svelte";
     import HeroCard from '$lib/components/HeroCard.svelte';
     import Article from '$lib/components/Article.svelte';
     import { base } from '$app/paths'
@@ -435,6 +435,27 @@
         color: rgba(255, 255, 255, 0.25);
     }
 
+    a{
+        text-decoration: none; 
+        color: whitesmoke; 
+        display:flex; 
+        overflow: visible; 
+        justify-content: center; 
+        align-items:center; 
+        border: 1px solid gray; 
+        width: 80%; 
+        padding: 10px 0px 10px 0px; 
+        margin: 10px 0 10px 0;
+        transition: .25s ease;
+    }
+
+    a:hover{
+        border: transparent solid 1px;
+        transition: .25s ease;
+    }
+
+
+
 
 
 </style>
@@ -505,10 +526,10 @@
                                     </div>
 
                                 </div>
-                                <a class="text-late" href="https://devpost.com/software/umass-greeneats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; height 50px; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-late" href="https://devpost.com/software/umass-greeneats" target="_blank" rel="noreferrer" >
                                     Devpost
                                 </a>
-                                <a class="text-late" href="https://github.com/vdsingh/UMass-GreenEats" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-late" href="https://github.com/vdsingh/UMass-GreenEats" target="_blank" rel="noreferrer" >
                                     Github
                                 </a>
                             </div>
@@ -554,7 +575,7 @@
                                     </div>
 
                                 </div>
-                                <a class="text-5" href="https://github.com/atdykema/giraffeSearch_golang" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-5" href="https://github.com/atdykema/giraffeSearch_golang" target="_blank" rel="noreferrer" >
                                     Github
                                 </a>
                             </div>
@@ -616,10 +637,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14228/commits/f21dc0fd3582a4e8c96cd530d8f7fb33075b4adf" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14228/commits/f21dc0fd3582a4e8c96cd530d8f7fb33075b4adf" target="_blank" rel="noreferrer">
                                     Github
                                 </a>
-                                <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14244/commits/4e1cd08ff2ceeddce2173aabb9780f5256e5c0b0" target="_blank" rel="noreferrer" style="text-decoration: none; color: whitesmoke; display:flex; overflow: visible; justify-content: center; align-items:center; border: 1px solid gray; width: 80%; padding: 10px 0px 10px 0px; margin: 10px 0 10px 0;">
+                                <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14244/commits/4e1cd08ff2ceeddce2173aabb9780f5256e5c0b0" target="_blank" rel="noreferrer" >
                                     Github
                                 </a>
                             </div>
@@ -635,7 +656,7 @@
         <div class="main-catagory-list" >
             <div class="main-catagory-list-inner" >
                 {#each catagories as {id, path, title}}
-                    <CatagoryCard bind:currentCatagory={currentCatagory} bind:currentArticle={currentArticle} id={id} title={title} path={path}></CatagoryCard>
+                    <CatagoryCardProject bind:currentCatagory={currentCatagory} bind:currentArticle={currentArticle} id={id} title={title} path={path}></CatagoryCardProject>
                 {/each}
             </div>        
         </div>
