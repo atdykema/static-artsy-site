@@ -101,7 +101,7 @@
         position: absolute;
         opacity: 0%;
         height: 0;
-        background-color: rgb(51, 51, 51);
+        background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
         transition: .25s ease-in-out;
         transform: translate(-50px);
         color: transparent;
@@ -156,8 +156,12 @@
         <div class="main-nav-body" transition:fade|local={{duration: 500}}>
             <ul class="nav-links">
                 <div class="nav-item">
+                    <div class="li-overlay">Home</div>
+                    <a href="{base}/">Home</a>
+                </div>
+                <div class="nav-item">
                     <div class="li-overlay">Introduction</div>
-                    <a href="{base}/">Introduction</a>
+                    <a href="{base}/introduction">Introduction</a>
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>
@@ -170,6 +174,10 @@
                 <div class="nav-item">
                     <div class="li-overlay">Film</div>
                     <a href="{base}/film">Film</a>
+                </div>
+                <div class="nav-item">
+                    <div class="li-overlay">Blog</div>
+                    <a href="{base}/blog">Blog</a>
                 </div>
             </ul>
         </div>

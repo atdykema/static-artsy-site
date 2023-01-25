@@ -91,6 +91,13 @@
                 href: "https://www.imdb.com/title/tt2582802/"
                 }
                 
+            },
+            {id:'11', path: '/images/mulan-transformed-transformed.jpeg', data: 
+                {
+                title: "Mulan",
+                href: "https://www.imdb.com/title/tt0120762/"
+                }
+                
             }
             
         ]
@@ -340,7 +347,7 @@
 
 </style>
 
-<div class="main-hero-container">
+<div class="main-hero-container" >
 
     {#key currentArticle}
         <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
@@ -349,7 +356,7 @@
     <div class="main-inner-mask"></div>
 
     
-    <div class="main-inner-layer grid">
+    <div class="main-inner-layer grid" >
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
             {#if currentArticle < 0}

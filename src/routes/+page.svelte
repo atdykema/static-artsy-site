@@ -1,50 +1,10 @@
 <script>
     import { fade } from 'svelte/transition'
     import CatagoryCard from "$lib/components/CatagoryCard.svelte";
+    import HeroCard from '$lib/components/HeroCard.svelte';
+    import Article from '$lib/components/Article.svelte';
     import { base } from '$app/paths'
 
-    const catagories = [
-        {id:'0', path: '', title: ''},
-        {id:'1', path: '', title: ''},
-        {id:'2', path: '', title: ''},
-        {id:'3', path: '', title: ''},
-        {id:'4', path: '', title: ''},
-
-    ]
-
-    let currentCatagory = 0
-
-    function onKeyDown(e){
-        switch(e.keyCode){
-            
-            case 37:
-                if(currentCatagory > 0)
-                {
-                    currentCatagory -= 1
-                }
-                break
-            case 38:
-                if(currentCatagory > 0)
-                {
-                    currentCatagory -= 1
-                }
-                break
-            case 39:
-                if(currentCatagory < catagories.length-1)
-                {
-                    currentCatagory += 1
-                }
-                break
-            case 40:
-                if(currentCatagory < catagories.length-1)
-                {
-                    currentCatagory += 1
-                }
-                break
-                
-        }
-        console.log(currentCatagory)
-    }
 
 </script>
 
@@ -67,7 +27,7 @@
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
-        animation: fallIn 2s;
+        animation: fallIn 3s;
         
     }
 
@@ -95,7 +55,7 @@
         align-items: center;
         width: 100%;
         background-size: cover;
-        grid-column-start: 4;
+        grid-column-start: 2;
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
@@ -105,25 +65,8 @@
         border: 1px solid transparent;
     }
 
-    .main-catagory-list{
-        display: flex;
-        flex-direction: column;
-        grid-column: span 3;
-        grid-row-start: 2;
-        grid-row-end: 12;
-        z-index: 101;
-        
-    }
-
-    .main-catagory-list-inner{
-        display: block;
-        height: 80vh;
-        overflow-y: scroll;
-    }
-
     .main-inner-layer{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        display: flex;
         position: absolute;
         top: 0;
         left: 0;
@@ -168,64 +111,12 @@
         width: 100%;
         height: 100%;
         overflow-x: scroll;
+        align-items: center;
+        justify-content: center;
         
     }
 
     
-
-    @keyframes fade {
-        0%{
-            opacity: 0%;
-            transform: translateY(100%);
-        }
-        80%{
-            opacity: 0%;
-            transform: translateY(100%);
-        }
-        100%{
-            opacity: 100%;
-            transform: translateY(0%);
-        }
-    }
-
-    @keyframes fadeColor {
-        0%{
-            opacity: 0%;
-            transform: translateY(100%);
-        }
-        60%{
-            opacity: 0%;
-            transform: translateY(100%);
-        }
-        70%{
-            opacity: 100%;
-            transform: translateY(0%);
-            color: whitesmoke;
-            font-size: 5rem;
-        }
-        75%{
-            color: rgb(255, 0, 0);
-        }
-        78%{
-            color: rgb(255, 153, 0);
-        }
-        81%{
-            color: rgb(255, 251, 0);
-        }
-        84%{
-            color: rgb(60, 255, 0);
-        }
-        87%{
-            color: rgb(0, 47, 255);
-        }
-        90%{
-            color: rgb(225, 0, 255);
-            font-size: 5rem;
-        }
-        100%{
-            color: whitesmoke;
-        }
-    }
 
     @keyframes ani {
         0%{
@@ -324,121 +215,98 @@
         
     }
 
-    .intro-div{
+    .main-nav-container{
         display: flex;
+        width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 50px;
-        font-size: 64px;
     }
 
-    .text-1{
-        animation: fade 3s;
+    .main-nav-body{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
-    .text-2{
-        animation: fade 4s;
+    .nav-links{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        flex-direction: column;
+        
     }
 
-    .text-3{
-        animation: fade 5s;
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+        animation: fadeIn .25s ease-in-out;
+        width: 100%;
+        height: 100%;
+        transition: .25s ease;
     }
 
-    .text-late{
-        animation: fade 7s;
+    .nav-item:hover > a{
+        animation: fadeOut .25s ease-in-out;
+        opacity: 50%;
+        transition: .25s ease;
     }
 
-    .text-colorful{
-        animation: fadeColor 9s;
+    .nav-item:hover > .li-overlay{
+        opacity: 50%;
+        transform: translate(0%);
     }
 
+    .nav-item{
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .li-overlay{
+        position: absolute;
+        opacity: 0%;
+        height: 0;
+        background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+        transition: .25s ease-in-out;
+        transform: translate(-50px);
+        color: transparent;
+        padding: 1px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        /**/
+    }
 
 </style>
 
-<div class="main-hero-container">
 
-    {#key currentCatagory}
-        <div class="main-inner" style="background-image: url({base}{catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
-    {/key}
-
-    <div class="main-inner-mask"></div>
-
-    
-    <div class="main-inner-layer grid">
-        {#key currentCatagory}
-        <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
-            <div class="main-hero" out:fade|local={{duration: 500}}>
-                <div class="inner-hero" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 90%; text-align: center; font-size: 3rem;" >
-                    {#if currentCatagory == 0}
-                    <div class="intro-div text-1">
-                        Hi there.
-                    </div>
-                    <div class="intro-div text-2">
-                        My name is Drew.
-                    </div>
-                    <div class="intro-div text-late" style="font-size: 36px;">
-                        Psst... you can use the arrow keys to navigate ;)
-                    </div>
-                    {:else if currentCatagory == 1}
-                    <div class="intro-div text-1">
-                        Currently, I am an undergratuate student at University of Massachusetts Amherst studying Computer Science
-                    </div>
-                    <div class="intro-div text-2">
-                        I love listening to and expanding my horizons through music, as well as keeping up with all things space tech and exploration.
-                    </div>
-                    <div class="intro-div text-3">
-                        I'm getting better at picking up new books, so much learning to be done!
-                    </div>
-                    {:else if currentCatagory == 2}
-                    <div class="intro-div text-1">
-                        More than anything though, I'm passionate about creating new things.
-                    </div>
-                    <div class="intro-div text-2">
-                        Doing so while balancing my emphasis on objective problem solving and creative expression.
-                    </div>
-                    <div class="intro-div text-3">
-                        I like solving problems while making the world a bit more
-                    </div>
-                    <div class="intro-div text-colorful">colorful.</div>
-                    {:else if currentCatagory == 3}
-                    <div class="intro-div text-1">
-                        But I'd be lying if I said adding my own flair makes everything much more fun.
-                    </div>
-                    <div class="intro-div text-2">
-                        What is life without fun?
-                    </div>
-                    <div class="intro-div text-3">
-                        It would be no life of mine, that's for sure.
-                    </div>
-                    {:else if currentCatagory == 4}
-                    <div class="intro-div text-1">
-                        Anyway, thanks for coming to my site!
-                    </div>
-                    <div class="intro-div text-2">
-                        Take a look at the nav bar for some other stuff about me (you need to hover at the top to see it) 
-                    </div>
-                    <div class="intro-div text-late">
-                        Toodles
-                    </div>
-                    {/if}
-
-                </div>
+    <div class="main-inner-layer" in:fade|local={{duration: 500}} out:fade|local={{duration: 500}}>
+        <ul class="nav-links">
+            <div class="nav-item">
+                <div class="li-overlay">Introduction</div>
+                <a href="{base}/introduction">Introduction</a>
             </div>
-        </div>
-        {/key}
+            <div class="nav-item">
+                <div class="li-overlay">Projects</div>
+                <a href="{base}/projects">Projects</a>
+            </div>
+            <div class="nav-item">  
+                <div class="li-overlay">Music</div>
+                <a href="{base}/music">Music</a>
+            </div>
+            <div class="nav-item">
+                <div class="li-overlay">Film</div>
+                <a href="{base}/film">Film</a>
+            </div>
+            <div class="nav-item">
+                <div class="li-overlay">Blog</div>
+                <a href="{base}/blog">Blog</a>
+            </div>
+        </ul>
     </div>
-
-    <div class="main-inner-layer grid">
-        <div class="main-catagory-list" >
-            <div class="main-catagory-list-inner" >
-                {#each catagories as {id, path, title}}
-                    <CatagoryCard bind:currentCatagory={currentCatagory} id={id} title={title} path={path}></CatagoryCard>
-                {/each}
-            </div>        
-        </div>
-    </div>
-
-    
-</div>
-
-<svelte:window on:keydown|preventDefault={onKeyDown} />
