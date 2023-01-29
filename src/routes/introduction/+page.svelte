@@ -373,8 +373,7 @@
     }
 
     .loading-bar{
-        border-radius: 100px;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         border-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
         border-image-slice: 1;
         justify-content: start;
@@ -431,8 +430,8 @@
                     <div class="intro-div text-2">
                         My name is Drew.
                     </div>
-                    <div class="intro-div text-late" style="font-size: 36px;">
-                       You can use the arrow keys to navigate if you'd like ;)
+                    <div class="intro-div text-late">
+                        I create things.
                     </div>
                     {:else if currentCatagory == 1}
                     <div class="intro-div text-1">
@@ -442,11 +441,11 @@
                         I love listening to and expanding my horizons through music, as well as keeping up with all things space tech and exploration.
                     </div>
                     <div class="intro-div text-3">
-                        I'm getting better at picking up new books, so much learning to be done!
+                        I'm getting better at picking up new books, currently one of those things I want to get better at.
                     </div>
                     {:else if currentCatagory == 2}
                     <div class="intro-div text-1">
-                        More than anything though, I'm passionate about creating new things.
+                        More than anything though, I'm passionate about exploring and building new ideas and projects.
                     </div>
                     <div class="intro-div text-2">
                         Doing so while balancing my emphasis on objective problem solving and creative expression.
@@ -470,7 +469,7 @@
                         Anyway, thanks for coming to my site!
                     </div>
                     <div class="intro-div text-2">
-                        Take a look at the nav bar for some other stuff about me (you need to hover at the top to see it) 
+                        Take a look around at your leisure
                     </div>
                     <div class="intro-div text-late">
                         Toodles

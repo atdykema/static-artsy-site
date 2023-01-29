@@ -381,6 +381,7 @@
         grid-row-end: 12;
         z-index: 101;
         animation: fallIn 5s;
+        transition: 1s ease;
     }
 
     .main-catagory-list-inner{
@@ -563,7 +564,7 @@
                 </div>
             </div>
             {:else}
-            <div class="main-hero" out:fade|local={{duration: 500}}>
+            <div class="main-hero" out:fade|local={{duration: 500}} style="grid-column-start: {currentArticle >= 0 ? "2" : "4"}">
                 <div class="inner-hero">
                     <Article bind:currentArticle={currentArticle} id={articles[currentCatagory][currentArticle].id} path={articles[currentCatagory][currentArticle].path} data={articles[currentCatagory][currentArticle].data}></Article>
                 </div>
@@ -574,8 +575,8 @@
     </div>
 
     <div class="main-inner-layer grid">
-        <div class="main-catagory-list" >
-            <div class="main-catagory-list-inner" >
+        <div class="main-catagory-list" style="opacity: {currentArticle >= 0 ? "0%" : "100%"}" >
+            <div class="main-catagory-list-inner">
                 {#each catagories as {id, path, title}}
                     <CatagoryCard bind:currentCatagory={currentCatagory} bind:currentArticle={currentArticle} id={id} title={title} path={path}></CatagoryCard>
                 {/each}

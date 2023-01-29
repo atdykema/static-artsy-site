@@ -105,10 +105,11 @@
         transition: .25s ease-in-out;
         transform: translate(-50px);
         color: transparent;
-        padding: 1px;
+        padding: 2px;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
+        border-radius: 100px;
         /**/
     }
 
