@@ -602,7 +602,7 @@
                     {:else}
                     
                     <div style="opacity: 0%;">
-                        {goto(`./${base}`)}
+                        {goto(`./`)}
                     </div>
                         
                     {/if}
