@@ -193,7 +193,7 @@
         <div class="main-nav-body" transition:fade|local={{duration: 500}}>
             <div class="audio-body">
                 <audio loop class="audio-player" id="player">
-                    <source src="/images/music.mp3" type="audio/mpeg">
+                    <source src="{base}/images/music.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
                 <div class="audio-buttons">
