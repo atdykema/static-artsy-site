@@ -445,6 +445,94 @@
         animation: loading 14.5s ease;
     }
 
+    .color-intro{
+        display: flex;
+        position: absolute;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 12;
+        opacity: 0%;
+    }
+
+    .ci1{
+        
+        animation: color-intro-ani 2.3s ease;
+    }
+    .ci2{
+        
+        animation: color-intro-ani 2.35s ease;
+    }
+    .ci3{
+        
+        animation: color-intro-ani 2.4s ease;
+    }
+    .ci4{
+        
+        animation: color-intro-ani 2.45s ease;
+    }
+    .ci5{
+        
+        animation: color-intro-ani 2.5s ease;
+    }
+    .ci6{
+        
+        animation: color-intro-ani 2.55s ease;
+    }
+    .ci7{
+        
+        animation: color-intro-ani 2.6s ease;
+    }
+    .ci8{
+        
+        animation: color-intro-ani 2.65s ease;
+    }
+    .ci9{
+        
+        animation: color-intro-ani 2.7s ease;
+    }
+    .ci10{
+        
+        animation: color-intro-ani 2.75s ease;
+    }
+    .ci11{
+        
+        animation: color-intro-ani 2.8s ease;
+    }
+    .ci12{
+        
+        animation: color-intro-ani 2.85s ease;
+    }
+
+
+    @keyframes color-intro-ani{
+        0%{
+            width: 100%;
+            height: 100%;
+            opacity: 0%;
+        }
+        60%{
+            width: 100%;
+            height: 100%;
+            opacity: 0%;
+        }
+        70%{
+            width: 100%;
+            height: 100%;
+            opacity: 20%;
+        }
+        75%{
+            width: 0%;
+            height: 0%;
+            opacity: 20%;
+        }
+        100%{
+            width: 0%;
+            height: 0%;
+            opacity: 0%;
+        }
+    }
+
 
 </style>
 
@@ -461,6 +549,18 @@
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
             <div class="main-hero" out:fade|local={{duration: 500}}>
+                <div class="color-intro ci1" style="background-color: white"></div>
+                <div class="color-intro ci2" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci3" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci4" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci5" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci6" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci7" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci8" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci9" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci10" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci11" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                <div class="color-intro ci12" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
                 <div class="inner-hero" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 90%; text-align: center; font-size: 3rem;" >
                     {#if currentCatagory == 0}
                     <div class="intro-div text-1">
