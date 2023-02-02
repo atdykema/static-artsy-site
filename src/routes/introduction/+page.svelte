@@ -2,8 +2,9 @@
     import { fade } from 'svelte/transition'
     import CatagoryCard from "$lib/components/CatagoryCard.svelte";
     import { base } from '$app/paths'
+    import { goto } from "$app/navigation";
 
-    let intervalTime = 15000
+    let intervalTime = 13000
 
     const catagories = [
         {id:'0', path: '', title: ''},
@@ -11,6 +12,7 @@
         {id:'2', path: '', title: ''},
         {id:'3', path: '', title: ''},
         {id:'4', path: '', title: ''},
+        {id:'5', path: '', title: ''},
 
     ]
 
@@ -60,7 +62,7 @@
     
 
     function loadScenes(){
-        if(currentCatagory < catagories.length-1 ){
+        if(currentCatagory < catagories.length ){
             currentCatagory += 1;
         }
     }
@@ -198,7 +200,7 @@
             opacity: 0%;
             transform: translateY(100%);
         }
-        80%{
+        50%{
             opacity: 0%;
             transform: translateY(100%);
         }
@@ -353,57 +355,94 @@
     }
 
     .text-1{
-        animation: fade 3s;
-    }
-
-    .text-2{
-        animation: fade 4s;
-    }
-
-    .text-3{
         animation: fade 5s;
     }
 
-    .text-late{
+    .text-2{
+        animation: fade 6s;
+    }
+
+    .text-3{
         animation: fade 7s;
     }
 
+    .text-late{
+        animation: fade 9s;
+    }
+
     .text-colorful{
-        animation: fadeColor 9s;
+        animation: fadeColor 11s;
     }
 
     .loading-bar{
-        border: 1px solid transparent;
+        border: 5px solid transparent;
         border-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
         border-image-slice: 1;
         justify-content: start;
         align-items: flex-start;
         opacity: 0%;
-        width: 0%;
-        animation: loading 15s;
+        height: 0%;
+        width: 10%;
+    }
+
+    .loading-bar-body{
+        width: 100%; 
+        position: absolute; 
+        opacity:10%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
     }
 
     @keyframes loading{
         0%{
-            width: 0%;
+            height: 0%;
             opacity: 0%;
         }
         25%{
-            width: 0%;
+            height: 0%;
             opacity: 0%;
         }
         50%{
-            width: 0%;
-            opacity: 0%;
+            height: 80%;
+            opacity: 100%;
         }
-        95%{
-            width: 100%;
-            opacity: 50%;
+        75%{
+            height: 80%;
+            opacity: 100%;
         }
         100%{
-            width: 100%;
+            height: 0%;
             opacity: 0%;
         }
+    }
+
+    .l1{
+        animation: loading 11s ease;
+    }
+    .l2{
+        animation: loading 11.5s ease;
+    }
+    .l3{
+        animation: loading 12s ease;
+    }
+    .l4{
+        animation: loading 12.5s ease;
+    }
+    .l5{
+        animation: loading 13s ease;
+    }
+    .l6{
+        animation: loading 13.5s ease;
+    }
+    .l7{
+        animation: loading 14s ease;
+    }
+    .l8{
+        animation: loading 14.5s ease;
     }
 
 
@@ -474,10 +513,23 @@
                     <div class="intro-div text-late">
                         Toodles
                     </div>
+                    {:else}
+                    {goto(`./${base}`)}
+                    <div>
+                        bye
+                    </div>
                     {/if}
-                    {#if currentCatagory != catagories.length-1}
-                        <div style="width: 80%;">
-                            <div class="loading-bar"></div>
+                    {#if currentCatagory != catagories.length}
+                        <div class="loading-bar-body">
+                            <div class="loading-bar l1"></div>
+                            <div class="loading-bar l2"></div>
+                            <div class="loading-bar l3"></div>
+                            <div class="loading-bar l4"></div>
+                            <div class="loading-bar l5"></div>
+                            <div class="loading-bar l6"></div>
+                            <div class="loading-bar l7"></div>
+                            <div class="loading-bar l8"></div>
+                           
                         </div>
                     {/if}
 

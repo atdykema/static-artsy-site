@@ -1,6 +1,9 @@
 <script>
     import { fade } from 'svelte/transition'
     import { base } from '$app/paths'
+
+    let playing = false;
+
 </script>
 
 <style>
@@ -61,13 +64,14 @@
 
     .main-nav-container{
         position: absolute;
+        display: flex;
         align-items: center;
         justify-content: center;
         top: 0;
         left: 0;
         padding: 0;
         width: 100%;
-        height: 10vh;
+        height: 8vh;
         z-index: 103;
         font-size: 2rem;
     }
@@ -78,13 +82,38 @@
     }
 
     .main-nav-body{
-        display: grid;
+        display: flex;
         opacity: 0;
-        grid-template-columns: repeat(5, 1fr);
-        width: 100%;
+        width: 95%;
         color: whitesmoke;
-        height: 10vh;
+        height: 5vh;
         transition: .5s ease-in-out;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .audio-player{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 0;
+    }
+
+    .audio-body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 20%;
+        height: 100%;
+    }
+
+    .audio-buttons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
     }
 
     .nav-links{
@@ -92,8 +121,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        grid-column-start: 3;
-        grid-column-end: 6;
+        width: 60%;
         padding: 0;
     }
 
@@ -150,12 +178,38 @@
         }
     }
 
+    .audio-button{
+        cursor: pointer;
+        border: solid 1px whitesmoke;
+        padding: 0 20px 0 20px;
+    }
+
 </style>
 
 <div class="main-container">
+    
     <div class="main-nav-container">
+        
         <div class="main-nav-body" transition:fade|local={{duration: 500}}>
-            <ul class="nav-links">
+            <div class="audio-body">
+                <audio loop class="audio-player" id="player">
+                    <source src="/images/music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="audio-buttons">
+                    {#if playing == false}
+                        <div class="audio-button" on:click={()=>{document.getElementById('player').play(); playing = true}}>></div>
+                    {:else}
+                        <div class="audio-button" on:click={()=>{document.getElementById('player').pause(); playing = false}}>||</div> 
+                    {/if}
+                    <div class="audio-button" on:click={()=>{document.getElementById('player').volume -= 0.1}}>-</div>
+                    <div class="audio-button" on:click={()=>{document.getElementById('player').volume += 0.1}}>+</div>  
+                     
+                  </div>
+            </div>
+            
+            <div class="nav-links">
+                
                 <div class="nav-item">
                     <div class="li-overlay">Home</div>
                     <a href="{base}/">Home</a>
@@ -177,10 +231,14 @@
                     <a href="{base}/film">Film</a>
                 </div>
                 <div class="nav-item">
+                    <div class="li-overlay">Books</div>
+                    <a href="{base}/books">Books</a>
+                </div>
+                <div class="nav-item">
                     <div class="li-overlay">Blog</div>
                     <a href="{base}/blog">Blog</a>
                 </div>
-            </ul>
+            </div>
         </div>
         
     </div>

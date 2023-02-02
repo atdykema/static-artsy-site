@@ -80,7 +80,7 @@
             },
             {id:'9', path: '/images/the-sting-transformed.jpeg', data: 
                 {
-                title: "The String",
+                title: "The Sting",
                 href: "https://www.imdb.com/title/tt0070735/"
                 }
                 
@@ -237,7 +237,6 @@
 
     .inner-hero{
         display: flex;
-        animation: afterAni 2s;
         width: 100%;
         height: 100%;
         overflow-x: scroll;

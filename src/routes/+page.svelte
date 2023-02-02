@@ -21,50 +21,6 @@
         display: none;
     }
 
-    .main-hero-container{
-        display: flex; 
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
-        animation: fallIn 3s;
-        
-    }
-
-    .main-inner{
-        display: grid;
-        position: absolute;
-        grid-template-columns: repeat(12, 1fr);
-        width: 100vw;
-        max-width: 100vw;
-        height: 100vh;
-        max-height: 100vh;
-        background-size: cover;
-        background-position: center;
-        justify-content: center;
-        transition: .5s ease-in-out;
-        align-items: center;
-        
-        
-    }
-
-    .main-hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-size: cover;
-        grid-column-start: 2;
-        grid-column-end: 12;
-        grid-row-start: 2;
-        grid-row-end: 12;
-        animation: ani 3s;
-        color: white;
-        z-index: 100;
-        border: 1px solid transparent;
-    }
-
     .main-inner-layer{
         display: flex;
         position: absolute;
@@ -78,42 +34,7 @@
         justify-content: center;
         align-content: center;
 
-    }
 
-    .main-inner-mask{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        max-width: 100vw;
-        height: 100vh;
-        max-height: 100vh;
-        background: none;
-        justify-content: center;
-        align-content: center;
-        background: rgb(0,0,0);
-        background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
-    }
-
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-    }
-
-    .inner-hero{
-        display: flex;
-        animation: afterAni 2s;
-        width: 100%;
-        height: 100%;
-        overflow-x: scroll;
-        align-items: center;
-        justify-content: center;
-        
     }
 
     
@@ -176,16 +97,6 @@
             margin-top: 10vh;
         }
 
-        .main-catagory-list{
-            width: 100%;
-            overflow-x: hidden;
-            height: 100%;
-        }
-
-        .main-catagory-list-inner{
-            overflow-y: visible;
-        }
-
         @keyframes ani {
         0%{
             box-shadow: none;
@@ -215,19 +126,6 @@
         
     }
 
-    .main-nav-container{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-nav-body{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
 
     .nav-links{
         display: flex;
@@ -284,28 +182,71 @@
         /**/
     }
 
+    .text-1{
+        animation: fade 3s;
+    }
+
+    .text-2{
+        animation: fade 3.5s;
+    }
+
+    .text-3{
+        animation: fade 4s;
+    }
+
+    .text-4{
+        animation: fade 4.5s;
+    }
+
+    .text-5{
+        animation: fade 5s;
+    }
+
+    .text-6{
+        animation: fade 5.5s;
+    }
+
+    .text-late{
+        animation: fade 6s;
+    }
+
+    @keyframes fade {
+        0%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        30%{
+            opacity: 0%;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0%);
+        }
+    }
+
 </style>
 
 
     <div class="main-inner-layer" in:fade|local={{duration: 500}} out:fade|local={{duration: 500}}>
         <ul class="nav-links">
-            <div class="nav-item">
+            <div class="nav-item text-1">
                 <div class="li-overlay">Introduction</div>
                 <a href="{base}/introduction">Introduction</a>
             </div>
-            <div class="nav-item">
+            <div class="nav-item text-2">
                 <div class="li-overlay">Projects</div>
                 <a href="{base}/projects">Projects</a>
             </div>
-            <div class="nav-item">  
+            <div class="nav-item text-3">  
                 <div class="li-overlay">Music</div>
                 <a href="{base}/music">Music</a>
             </div>
-            <div class="nav-item">
+            <div class="nav-item text-4">
                 <div class="li-overlay">Film</div>
                 <a href="{base}/film">Film</a>
             </div>
-            <div class="nav-item">
+            <div class="nav-item text-5">
                 <div class="li-overlay">Blog</div>
                 <a href="{base}/blog">Blog</a>
             </div>

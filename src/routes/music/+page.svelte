@@ -433,7 +433,6 @@
 
     .inner-hero{
         display: flex;
-        animation: afterAni 2s;
         width: 100%;
         height: 100%;
         overflow-x: scroll;
