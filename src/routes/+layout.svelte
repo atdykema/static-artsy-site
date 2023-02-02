@@ -133,7 +133,7 @@
         transition: .25s ease-in-out;
         transform: translate(-50px);
         color: transparent;
-        padding: 2px;
+        padding: 1px;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;

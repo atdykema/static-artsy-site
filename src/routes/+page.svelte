@@ -174,7 +174,7 @@
         transition: .25s ease-in-out;
         transform: translate(-50px);
         color: transparent;
-        padding: 5px;
+        padding: 1px;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -245,6 +245,10 @@
             <div class="nav-item text-4">
                 <div class="li-overlay">Film</div>
                 <a href="{base}/film">Film</a>
+            </div>
+            <div class="nav-item text-4">
+                <div class="li-overlay">Books</div>
+                <a href="{base}/books">Books</a>
             </div>
             <div class="nav-item text-5">
                 <div class="li-overlay">Blog</div>

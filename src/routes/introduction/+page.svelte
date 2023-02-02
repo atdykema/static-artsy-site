@@ -3,6 +3,13 @@
     import CatagoryCard from "$lib/components/CatagoryCard.svelte";
     import { base } from '$app/paths'
     import { goto } from "$app/navigation";
+	import { onMount } from 'svelte';
+
+    onMount(async () => 
+        {
+            document.querySelector('video').playbackRate = .5;
+        }
+    )
 
     let intervalTime = 13000
 
@@ -124,26 +131,10 @@
         grid-column-end: 12;
         grid-row-start: 2;
         grid-row-end: 12;
-        animation: ani 3s;
+        animation: ani 2s;
         color: white;
         z-index: 100;
         border: 1px solid transparent;
-    }
-
-    .main-catagory-list{
-        display: flex;
-        flex-direction: column;
-        grid-column: span 3;
-        grid-row-start: 2;
-        grid-row-end: 12;
-        z-index: 101;
-        
-    }
-
-    .main-catagory-list-inner{
-        display: block;
-        height: 80vh;
-        overflow-y: scroll;
     }
 
     .main-inner-layer{
@@ -254,7 +245,6 @@
 
     @keyframes ani {
         0%{
-            border: rgb(212, 212, 212) 1px solid;
             width: 0px;
             height: 0px;
         }
@@ -269,7 +259,6 @@
         75%{
             height: 100%;
             width: 100%;
-            border: rgb(212, 212, 212) 1px solid;
         }
         100%{
             border: transparent 1px solid;
@@ -386,7 +375,6 @@
         opacity: 0%;
         height: 0%;
         width: 10%;
-        background-image: url('/images/abba.jpg');
         background-position: center;
     }
 
@@ -544,28 +532,21 @@
 <div class="main-hero-container" out:fade|local={ {duration: 1000, delay: 500}}>
 
     {#key currentCatagory}
-        <div class="main-inner" style="background-image: url({base}{catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
+        <div class="main-inner" style="background-image: url({base}{catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 1000}}></div>
     {/key}
 
     <div class="main-inner-mask"></div>
 
     
     <div class="main-inner-layer grid" >
+        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0;">
+            <source src="/images/bg2-t.mp4" type="video/mp4" />
+        </video>
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
             <div class="main-hero" out:fade|local={{duration: 500}}>
-                <div class="color-intro ci1" style="background-color: white"></div>
-                <div class="color-intro ci2" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci3" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci4" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci5" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci6" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci7" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci8" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci9" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci10" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci11" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
-                <div class="color-intro ci12" style="background-color: #{Math.floor(Math.random()*16777215).toString(16)}"></div>
+                
+                
                 <div class="inner-hero" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 90%; text-align: center; font-size: 3rem;" >
                     {#if currentCatagory == 0}
                     <div class="intro-div text-1">
@@ -619,10 +600,11 @@
                         Toodles
                     </div>
                     {:else}
-                    {goto(`./${base}`)}
-                    <div>
-                        bye
+                    
+                    <div style="opacity: 0%;">
+                        {goto(`./${base}`)}
                     </div>
+                        
                     {/if}
                     {#if currentCatagory != catagories.length}
                         <div class="loading-bar-body">
@@ -637,6 +619,7 @@
                            
                         </div>
                     {/if}
+                    
 
                 </div>
             </div>
