@@ -158,6 +158,9 @@
         height: 100vh;
         overflow-x: hidden;
         animation: fallIn 3s;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .main-inner{
@@ -346,7 +349,7 @@
 
 </style>
 
-<div class="main-hero-container" >
+<div class="main-hero-container" out:fade|local={ {duration: 1000, delay: 500}}>
 
     {#key currentArticle}
         <div class="main-inner" style="background-image: url({base}{currentArticle >= 0 ? articles[currentCatagory][currentArticle].path : catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>

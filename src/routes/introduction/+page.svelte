@@ -89,7 +89,10 @@
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
-        animation: fallIn 2s;
+        animation: fallIn 3s;
+        position: absolute;
+        top: 0;
+        left: 0;
         
     }
 
@@ -383,6 +386,8 @@
         opacity: 0%;
         height: 0%;
         width: 10%;
+        background-image: url('/images/abba.jpg');
+        background-position: center;
     }
 
     .loading-bar-body{
@@ -536,7 +541,7 @@
 
 </style>
 
-<div class="main-hero-container">
+<div class="main-hero-container" out:fade|local={ {duration: 1000, delay: 500}}>
 
     {#key currentCatagory}
         <div class="main-inner" style="background-image: url({base}{catagories[currentCatagory].path});" in:fade|local={ {duration: 1000, delay: 1500}} out:fade|local={ {duration: 1000, delay: 500}}></div>
@@ -621,7 +626,7 @@
                     {/if}
                     {#if currentCatagory != catagories.length}
                         <div class="loading-bar-body">
-                            <div class="loading-bar l1"></div>
+                            <div class="loading-bar l1" ></div>
                             <div class="loading-bar l2"></div>
                             <div class="loading-bar l3"></div>
                             <div class="loading-bar l4"></div>
