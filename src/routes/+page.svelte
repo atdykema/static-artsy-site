@@ -245,12 +245,28 @@
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
     }
 
+    video{
+        animation: fadeInBg 6s ease;
+    }
+
+    @keyframes fadeInBg{
+        0%{
+            opacity: 0%;
+        }
+        50%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
 </style>
 
     
     <div class="main-inner-layer" in:fade|local={{duration: 500, delay: 1500}} out:fade|local={{duration: 500}}>
         <div class="main-inner-mask"></div>
-        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;" in:fade|local={{duration: 5000, delay: 5000}}>
+        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;">
             <source src="{base}/images/bg2-t.mp4" type="video/mp4" />
         </video>
         <ul class="nav-links">

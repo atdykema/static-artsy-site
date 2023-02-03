@@ -13,28 +13,28 @@
 
     const articles = {
         0: [
-            {id:'0', path: '/images/projects1-transformed-transformed.png', data: 
+            {id:'0', path: '', data: 
                 {
                 title: "The Big Short",
                 href: "https://www.imdb.com/title/tt1596363/"
                 }
                 
             },
-            {id:'1', path: '/images/project2-transformed-transformed.png', data: 
+            {id:'1', path: '', data: 
                 {
                 title: "Inglorious Basterds",
                 href: "https://www.imdb.com/title/tt0361748/"
                 }
                 
             },
-            {id:'2', path: '/images/project3-transformed-transformed.png', data: 
+            {id:'2', path: '', data: 
                 {
                 title: "The Batman",
                 href: "https://www.imdb.com/title/tt1877830/"
                 }
                 
             },
-            {id:'3', path: '/images/project4-transformed-transformed.png', data: 
+            {id:'3', path: '', data: 
                 {
                 title: "Midsommar",
                 href: "https://www.imdb.com/title/tt8772262/"
@@ -647,8 +647,14 @@
 
     
     <div class="main-inner-layer grid" >
+
+        <div style="position: absolute; top: 50%; left: 50%; color: white;">
+            Under Construction
+        </div>
+        
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
+            
             {#if currentArticle < 0}
             <div class="main-hero" out:fade|local={{duration: 500}}>
                 <div class="inner-hero" >
@@ -659,6 +665,7 @@
             </div>
             {:else}
             <div class="main-hero" out:fade|local={{duration: 500}}>
+                
                 {#if currentArticle == 0}
                     
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
