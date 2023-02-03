@@ -104,7 +104,7 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        width: 20%;
+        width: 10%;
         height: 100%;
     }
 
@@ -178,10 +178,28 @@
         }
     }
 
+    @keyframes fadeInOut{
+        0%{
+            opacity: 0%;
+        }
+        50%{
+            opacity: 50%; 
+        }
+        100%{
+            opacity: 0%; 
+        }
+    }
+
     .audio-button{
         cursor: pointer;
         border: solid 1px whitesmoke;
         padding: 0 20px 0 20px;
+    }
+
+    .now-playing{
+        animation: fadeInOut 4s ease infinite;
+        display: flex;
+        justify-content: start;
     }
 
 </style>
@@ -202,11 +220,20 @@
                     {:else}
                         <div class="audio-button" on:click={()=>{document.getElementById('player').pause(); playing = false}}>||</div> 
                     {/if}
+                    <!--
                     <div class="audio-button" on:click={()=>{document.getElementById('player').volume -= 0.1}}>-</div>
-                    <div class="audio-button" on:click={()=>{document.getElementById('player').volume += 0.1}}>+</div>  
+                    <div class="audio-button" on:click={()=>{document.getElementById('player').volume += 0.1}}>+</div>
+                    -->  
                      
-                  </div>
+                </div>
+                
+                
             </div>
+            {#if playing}
+                    <div class="now-playing">
+                        Palace - ADTurnUp
+                    </div>
+                {/if}
             
             <div class="nav-links">
                 

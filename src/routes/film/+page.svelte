@@ -4,6 +4,7 @@
     import HeroCard from '$lib/components/HeroCard.svelte';
     import Article from '$lib/components/Article.svelte';
     import { base } from '$app/paths'
+	import { onMount } from 'svelte'
 
     const catagories = [
         {id:'0', path: '', title: ''},
@@ -135,6 +136,9 @@
                 
         }
     }
+
+    
+    
 
 </script>
 

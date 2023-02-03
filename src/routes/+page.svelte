@@ -134,6 +134,7 @@
         align-items: center;
         font-size: 5rem;
         flex-direction: column;
+        z-index: 100;
         
     }
 
@@ -225,10 +226,33 @@
         }
     }
 
+    .main-inner-mask{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        background: none;
+        justify-content: center;
+        align-content: center;
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
+    }
+
 </style>
 
-
-    <div class="main-inner-layer" in:fade|local={{duration: 500}} out:fade|local={{duration: 500}}>
+    
+    <div class="main-inner-layer" in:fade|local={{duration: 500, delay: 1500}} out:fade|local={{duration: 500}}>
+        <div class="main-inner-mask"></div>
+        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;" in:fade|local={{duration: 5000, delay: 5000}}>
+            <source src="{base}/images/bg2-t.mp4" type="video/mp4" />
+        </video>
         <ul class="nav-links">
             <div class="nav-item text-1">
                 <div class="li-overlay">Introduction</div>

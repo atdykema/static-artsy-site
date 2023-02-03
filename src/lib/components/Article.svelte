@@ -3,6 +3,8 @@
     export let data, currentArticle
     import { base } from '$app/paths'
 
+    
+
 </script>
 
 <style>
@@ -109,6 +111,8 @@
             transform: translateY(0%);
         }
     }
+
+    
 
     
 

@@ -368,14 +368,14 @@
 
     .loading-bar{
         border: 5px solid transparent;
-        border-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-        border-image-slice: 1;
+        border-color: black;
         justify-content: start;
         align-items: flex-start;
         opacity: 0%;
         height: 0%;
-        width: 10%;
+        flex: 10;
         background-position: center;
+        background-size: cover;
     }
 
     .loading-bar-body{
@@ -539,7 +539,7 @@
 
     
     <div class="main-inner-layer grid" >
-        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0;">
+        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;">
             <source src="{base}/images/bg2-t.mp4" type="video/mp4" />
         </video>
         {#key currentCatagory}
@@ -567,6 +567,12 @@
                     </div>
                     <div class="intro-div text-3">
                         I'm getting better at picking up new books, currently one of those things I want to get better at.
+                    </div>
+                    <div class="loading-bar-body">
+                        <div class="loading-bar l1" style="background-image: url('/images/umass.jpg')"></div>
+                        <div class="loading-bar l2" style="background-image: url('/images/umass.jpg')"></div>
+                        <div class="loading-bar l3" style="background-image: url('/images/umass.jpg')"></div>
+                       
                     </div>
                     {:else if currentCatagory == 2}
                     <div class="intro-div text-1">
@@ -605,19 +611,6 @@
                         {goto(`./`)}
                     </div>
                         
-                    {/if}
-                    {#if currentCatagory != catagories.length}
-                        <div class="loading-bar-body">
-                            <div class="loading-bar l1" ></div>
-                            <div class="loading-bar l2"></div>
-                            <div class="loading-bar l3"></div>
-                            <div class="loading-bar l4"></div>
-                            <div class="loading-bar l5"></div>
-                            <div class="loading-bar l6"></div>
-                            <div class="loading-bar l7"></div>
-                            <div class="loading-bar l8"></div>
-                           
-                        </div>
                     {/if}
                     
 
