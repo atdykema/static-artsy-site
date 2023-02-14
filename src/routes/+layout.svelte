@@ -243,7 +243,7 @@
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Introduction</div>
-                    <a href="{base}/introduction">Introduction</a>
+                    <a href="{base}/blog">Introduction</a>
                 </div>
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>

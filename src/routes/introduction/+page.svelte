@@ -1,6 +1,5 @@
 <script>
-    import { fade } from 'svelte/transition'
-    import CatagoryCard from "$lib/components/CatagoryCard.svelte";
+    import { fade } from 'svelte/transition'    
     import { base } from '$app/paths'
     import { goto } from "$app/navigation";
 	import { onMount } from 'svelte';

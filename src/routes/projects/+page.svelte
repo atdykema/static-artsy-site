@@ -118,7 +118,7 @@
         justify-content: center;
         transition: .5s ease-in-out;
         align-items: center;
-        opacity: 25%;
+        opacity: 50%;
         
         
     }
@@ -586,21 +586,28 @@
 
     a{
         text-decoration: none; 
-        color: whitesmoke; 
+        color: rgba(255, 255, 255, 0.5);; 
         display:flex; 
         overflow: visible; 
         justify-content: center; 
         align-items:center; 
-        border: 1px solid gray; 
-        width: 80%; 
-        padding: 10px 0px 10px 0px; 
+        border: 1px solid rgba(255, 255, 255, 0.5);; 
+        padding: 10px 10px 10px 10px; 
         margin: 10px 0 10px 0;
-        transition: .25s ease;
+        transition: 1s ease;
+        border-radius: 10px;
+        width: 50%;
+        box-sizing: border-box;
     }
 
     a:hover{
-        border: transparent solid 1px;
+        border: 1px solid whitesmoke; 
         transition: .25s ease;
+        border-radius: 0;
+        color: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 255, 255, 1);
+        width: 80%;
+
     }
 
     .back-button{
@@ -631,6 +638,46 @@
         100%{
             opacity: 75%;
             transform: translateY(0%);
+        }
+    }
+
+    .circle{
+        border: 1px solid transparent;
+        width: 0px;
+        height: 0px;
+        transition: .5s ease;
+        position: absolute;
+        z-index: -100;
+    }
+
+    a:hover > #cir1{
+        transition: .5s ease;
+        animation: circleAni 1s;
+    }
+
+    a:hover > #cir2{
+        transition: .5s ease;
+        animation: circleAni 1s .1s;
+    }
+
+    a:hover > #cir3{
+        transition: .5s ease;
+        animation: circleAni 1s .1s;
+    }
+
+    @keyframes circleAni{
+        0%{
+            border: 1px solid transparent;
+            width: 0%;
+            height: 0%;
+        }
+        50%{
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        100%{
+            border: 1px solid transparent;
+            width: 40%;
+            height: 10%;
         }
     }
 
@@ -692,7 +739,7 @@
                                 🏆 Won Best Software hack<br>
                                 🥈 Placed Second Place Overall (out of 65 teams/206 participants)
                             </div>
-                            <div class="skills-list text-5" style="overflow: visible; font-style:oblique;">
+                            <div class="skills-list text-5" style="overflow: visible;">
                                 <div class="skills-item" style="overflow: visible;">
                                     <div>
                                         🐍 Python 🐍
@@ -717,9 +764,15 @@
                             </div>
                             <a class="text-late" href="https://devpost.com/software/umass-greeneats" target="_blank" rel="noreferrer" >
                                 Devpost
+                                <div class="circle" id="cir1"></div>
+                                <div class="circle" id="cir2"></div>
+                                <div class="circle" id="cir3"></div>
                             </a>
                             <a class="text-late" href="https://github.com/vdsingh/UMass-GreenEats" target="_blank" rel="noreferrer" >
                                 Github
+                                <div class="circle" id="cir1"></div>
+                                <div class="circle" id="cir2"></div>
+                                <div class="circle" id="cir3"></div>
                             </a>
                         </div>
                     </div>
@@ -752,7 +805,7 @@
                         </div>
                         <div class="article-right">
                         
-                            <div class="skills-list text-3" style="overflow: visible; font-style:oblique;">
+                            <div class="skills-list text-3" style="overflow: visible;">
                                 <div class="skills-item" style="overflow: visible;">
                                     <div>
                                         🐹 Golang 🐹
@@ -767,6 +820,9 @@
                             </div>
                             <a class="text-5" href="https://github.com/atdykema/giraffeSearch_golang" target="_blank" rel="noreferrer" >
                                 Github
+                                <div class="circle" id="cir1"></div>
+                                <div class="circle" id="cir2"></div>
+                                <div class="circle" id="cir3"></div>
                             </a>
                         </div>
                     </div>
@@ -789,7 +845,7 @@
                         </div>
                         <div class="article-right text-3">
                             
-                            <div class="skills-list" style="overflow: visible; font-style:oblique;">
+                            <div class="skills-list" style="overflow: visible;">
                                 <div class="skills-item" style="overflow: visible;">
                                     <div>
                                         📜 Javascript 📜
@@ -829,9 +885,15 @@
                             </div>
                             <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14228/commits/f21dc0fd3582a4e8c96cd530d8f7fb33075b4adf" target="_blank" rel="noreferrer">
                                 Github
+                                <div class="circle" id="cir1"></div>
+                                <div class="circle" id="cir2"></div>
+                                <div class="circle" id="cir3"></div>
                             </a>
                             <a class="text-5" href="https://github.com/SerenityOS/serenity/pull/14244/commits/4e1cd08ff2ceeddce2173aabb9780f5256e5c0b0" target="_blank" rel="noreferrer" >
                                 Github
+                                <div class="circle" id="cir1"></div>
+                                <div class="circle" id="cir2"></div>
+                                <div class="circle" id="cir3"></div>
                             </a>
                         </div>
                     </div>

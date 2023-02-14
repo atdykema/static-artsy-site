@@ -272,7 +272,7 @@
         <ul class="nav-links">
             <div class="nav-item text-1">
                 <div class="li-overlay">Introduction</div>
-                <a href="{base}/introduction">Introduction</a>
+                <a href="{base}/blog">Introduction</a>
             </div>
             <div class="nav-item text-2">
                 <div class="li-overlay">Projects</div>

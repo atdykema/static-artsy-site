@@ -180,7 +180,7 @@
         justify-content: center;
         transition: .5s ease-in-out;
         align-items: center;
-        opacity: 25%;
+        opacity: 50%;
         
         
     }
