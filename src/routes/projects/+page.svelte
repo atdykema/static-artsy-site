@@ -876,7 +876,7 @@
                         </div>
                         <div class="article-right">
                             
-                            <div class="skills-list text-3" style="overflow: visible; font-style:oblique;">
+                            <div class="skills-list text-3" style="overflow: visible;">
                                 <div class="skills-item" style="overflow: visible;">
                                     <div>
                                         🖥️ C++ 🖥️
