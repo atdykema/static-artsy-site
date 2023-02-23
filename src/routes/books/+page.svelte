@@ -13,27 +13,49 @@
 
     const articles = {
         0: [
-            {id:'0', path: '/images/hitchhikers.jpg', data: 
+            {id:'0', path: '/images/hitchhikers-transformed.webp', data: 
                 {
                 title: "The Hitchhiker's Guide to the Galaxy",
-                href: "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy"
+                href: "https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy"
                 }
                 
             },
             {id:'1', path: '/images/brief.jpg', data: 
                 {
                 title: "A Brief History of Time",
-                href: "https://en.wikipedia.org/wiki/A_Brief_History_of_Time"
+                href: "https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time"
                 }
                 
             },
-            {id:'2', path: '/images/freakonomics.webp', data: 
+            {id:'2', path: '/images/freakanomics-transformed.jpeg', data: 
                 {
                 title: "Freakonomics",
-                href: "https://en.wikipedia.org/wiki/Freakonomics"
+                href: "https://www.goodreads.com/book/show/1202.Freakonomics"
                 }
                 
-            }
+            },
+            {id:'3', path: '/images/history-of-philosophy-transformed.jpeg', data: 
+                {
+                title: "The History of Philosophy",
+                href: "https://www.goodreads.com/book/show/41954426-the-history-of-philosophy"
+                }
+                
+            },
+            {id:'4', path: '/images/atomic-habits-transformed.jpeg', data: 
+                {
+                title: "Atomic Habits",
+                href: "https://www.goodreads.com/book/show/40121378-atomic-habits"
+                }
+                
+            },
+            {id:'5', path: '/images/the-premonition-transformed.jpeg', data: 
+                {
+                title: "The Premonition",
+                href: "https://www.goodreads.com/book/show/56790170-the-premonition"
+                }
+                
+            },
+
             
         ]
     }   
