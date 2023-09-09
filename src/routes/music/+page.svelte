@@ -557,7 +557,7 @@
     
     <div class="main-inner-layer grid">
         <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;">
-            <source src="{base}/images/bg2-t.mp4" type="video/mp4" />
+            <source src="{base}/images/bg-1.mp4" type="video/mp4" />
         </video>
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>

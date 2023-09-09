@@ -4,7 +4,6 @@
 </script>
 
 <style>
-
     .main-container{
         height: 30%;
         max-height: 30%;

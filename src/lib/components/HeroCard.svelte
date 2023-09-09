@@ -17,19 +17,20 @@
         margin: 0;
         align-items: center;
         justify-content: center;
-        transition: .25s ease-in-out;
+        transition: 1s  cubic-bezier( 0.12, -0.01, 0, 1 );
         flex-direction: column;
         background-position: center;
         background-size:cover;
         background-repeat: no-repeat;
-        opacity: 25%;
+        opacity: 15%;
         filter: grayscale(100%);
     }
 
     .main-container:hover {
         flex: 3;
-        opacity: 100%;
+        opacity: 75%;
         filter: grayscale(0);
+        transition: 1s  cubic-bezier( 0.12, -0.01, 0, 1 );
     }
 
     .main-container:hover > .main-container-inner{

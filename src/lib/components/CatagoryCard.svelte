@@ -17,7 +17,7 @@
         margin: 5px;
         align-items: center;
         justify-content: center;
-        transition: .25s ease-in-out;
+        transition: 2s  cubic-bezier( 0.12, -0.01, 0, 1 );
         flex-direction: column;
         color: transparent;
         opacity: 25%;
@@ -33,6 +33,7 @@
         color: whitesmoke;
         opacity: 100%;
         transform: translate(0%);
+        transition: 2s  cubic-bezier( 0.12, -0.01, 0, 1 );
 
     }
 
@@ -98,7 +99,7 @@
         <div class="title-container">
             
             <div class="li-overlay" style="background-image: url({base}{path})">{title}</div>
-            <h1 >{title}</h1>
+            <!-- <h1 >{title}</h1> -->
         </div>
     </div>
     

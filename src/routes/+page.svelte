@@ -145,11 +145,15 @@
         width: 100%;
         height: 100%;
         transition: .25s ease;
+        opacity: 75%;
+    }
+
+    .nav-item:hover{
+        opacity: 100%;
     }
 
     .nav-item:hover > a{
         animation: fadeOut .25s ease-in-out;
-        opacity: 50%;
         transition: .25s ease;
     }
 
@@ -165,17 +169,21 @@
         overflow: hidden;
         justify-content: center;
         align-items: flex-end;
+        margin: 20px;
+        opacity: 50%;
+        transition: .25s ease;
+
     }
 
     .li-overlay{
         position: absolute;
         opacity: 0%;
         height: 0;
-        background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-        transition: .25s ease-in-out;
+        background-color: rgba(255, 255, 255, 20%);
+        transition: .5s  cubic-bezier( 0.12, -0.01, 0, 1 );
         transform: translate(-50px);
         color: transparent;
-        padding: 1px;
+        padding: 15px;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -221,7 +229,7 @@
             transform: translateY(100%);
         }
         100%{
-            opacity: 100%;
+            opacity: 50%;
             transform: translateY(0%);
         }
     }
@@ -266,14 +274,18 @@
     
     <div class="main-inner-layer" in:fade|local={{duration: 500, delay: 1500}} out:fade|local={{duration: 500}}>
         <div class="main-inner-mask"></div>
+        
         <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;">
-            <source src="{base}/images/bg2-t.mp4" type="video/mp4" />
+            <source src="{base}/images/bg-1.mp4" type="video/mp4" />
         </video>
+        
         <ul class="nav-links">
+            <!--
             <div class="nav-item text-1">
                 <div class="li-overlay">Introduction</div>
                 <a href="{base}/blog">Introduction</a>
             </div>
+            -->
             <div class="nav-item text-2">
                 <div class="li-overlay">Projects</div>
                 <a href="{base}/projects">Projects</a>
@@ -286,6 +298,7 @@
                 <div class="li-overlay">Film</div>
                 <a href="{base}/film">Film</a>
             </div>
+            <!--
             <div class="nav-item text-4">
                 <div class="li-overlay">Books</div>
                 <a href="{base}/books">Books</a>
@@ -294,5 +307,6 @@
                 <div class="li-overlay">Blog</div>
                 <a href="{base}/blog">Blog</a>
             </div>
+            -->
         </ul>
     </div>

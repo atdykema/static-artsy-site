@@ -572,7 +572,6 @@
         font-size: 5rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.5);
-        transition: 1s ease;
         text-align: center;
     }
 
@@ -696,7 +695,7 @@
     
     <div class="main-inner-layer grid" >
         <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;">
-            <source src="{base}/images/bg2-t.mp4" type="video/mp4" />
+            <source src="{base}/images/bg-1.mp4" type="video/mp4" />
         </video>
         {#key currentCatagory}
         <div class="main-inner-layer grid" out:fade|local={{duration: 500}}>
@@ -713,19 +712,7 @@
                 {#if currentArticle == 0}
                     
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
-                        <div class="article-left">
-                            <div>
-                                <div class="text-2">
-                                    > Mobile application which ingests UMass' daily dining menus and produces healthy and sustainable meal plans based on users bio-metrics (gender, height, weight, allergens), allowing students to reduce individual carbon footprint.<br><br>
-                                </div>
-                                <div class="text-4">
-                                    > Built as a team project at UMass' 2022 hackathon<br><br>
-                                </div>
-                                <div class="text-6">
-                                    > Personally built out Selenium web scraper using Python for collecting and storing menu data in Firebase.
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="project-date text-3" style="overflow: visible; font-weight: bold">
                             November 12-13, 2022
                         </div>
@@ -775,28 +762,25 @@
                                 <div class="circle" id="cir3"></div>
                             </a>
                         </div>
+                        <div class="article-left">
+                            <div>
+                                <div class="text-2">
+                                    > Mobile application which ingests UMass' daily dining menus and produces healthy and sustainable meal plans based on users bio-metrics (gender, height, weight, allergens), allowing students to reduce individual carbon footprint.<br><br>
+                                </div>
+                                <div class="text-4">
+                                    > Built as a team project at UMass' 2022 hackathon<br><br>
+                                </div>
+                                <div class="text-6">
+                                    > Personally built out Selenium web scraper using Python for collecting and storing menu data in Firebase.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                 {:else if currentArticle == 1}
                     
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
-                        <div class="article-left">
-                            <div>
-                                <div class="text-2">
-                                    > Allows for enhanced Finder/grep-type capabilities using keywords and specified file/directory attributes.<br><br>
-                                </div>
-                                <div class="text-4">
-                                    > Inspired by issues relating to search results of built-in Mac file search function, which return deeply embedded files before top level applications of which were unlikely to be ones I was looking for.<br><br>
-                                </div>
-                                <div class="text-6">
-                                    > Incorporates speed-optimized, multithreaded BFS and DFS search algorithms, achieving 7x faster runtimes.<br><br>
-                                </div>
-                                <div class="text-late">
-                                    > Designed image search algorithm based on color keywords using approximate image pixel-color composition.
-                                </div>
-
-                            </div>
-                        </div>
+                        
                         <div class="project-date text-3" style="overflow: visible; font-weight: bold">
                             May-June, 2022
                         </div>
@@ -825,18 +809,28 @@
                                 <div class="circle" id="cir3"></div>
                             </a>
                         </div>
+                        <div class="article-left">
+                            <div>
+                                <div class="text-2">
+                                    > Allows for enhanced Finder/grep-type capabilities using keywords and specified file/directory attributes.<br><br>
+                                </div>
+                                <div class="text-4">
+                                    > Inspired by issues relating to search results of built-in Mac file search function, which return deeply embedded files before top level applications of which were unlikely to be ones I was looking for.<br><br>
+                                </div>
+                                <div class="text-6">
+                                    > Incorporates speed-optimized, multithreaded BFS and DFS search algorithms, achieving 7x faster runtimes.<br><br>
+                                </div>
+                                <div class="text-late">
+                                    > Designed image search algorithm based on color keywords using approximate image pixel-color composition.
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 {:else if currentArticle == 2}
                     
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
-                        <div class="article-left">
-                            <div>
-                                <div class="text-2">> Uses graphical computation algorithms, like M ̈oller-Trumbore ray-triangle intersection calculations and Phong shading.<br><br></div>
-                                <div class="text-4">> Able to handle both reflection and refraction of light rays according to material composition of objects in scene.<br><br></div>
-                                <div class="text-5">> Calculates individual ray position up to five times after initial light ray activation to achieve high detail render.</div>
-                                
-                            </div>
-                        </div>
+                        
                         <div class="project-date text-3" style="overflow: visible; font-weight: bold">
                             April-May, 2022
                         </div>
@@ -853,20 +847,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="article-left">
+                            <div>
+                                <div class="text-2">> Uses graphical computation algorithms, like M ̈oller-Trumbore ray-triangle intersection calculations and Phong shading.<br><br></div>
+                                <div class="text-4">> Able to handle both reflection and refraction of light rays according to material composition of objects in scene.<br><br></div>
+                                <div class="text-5">> Calculates individual ray position up to five times after initial light ray activation to achieve high detail render.</div>
+                                
+                            </div>
+                        </div>
                     </div>
                 {:else if currentArticle == 3}
                     
                     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%">
-                        <div class="article-left">
-                            <div>
-                                <div class="text-2">> Link 1: Implemented math constant Phi (Golden Ratio) functionality to onboard Calculator application.<br><br></div>
-                                <div class="text-4">> Inspired by onboard calculator's lacks high-level math functionality and user-friendliness for anything above basic calculation.<br><br></div>
-                                <div class="text-6">> Wanted to bring more flexibility to the function of the application.<br><br></div>
-                                <div class="text-late">> Link 2: Implemented ability to adjust time-of-day of events to 'Add Event' functionality of onboard Calender application.<br><br></div>
-                                <div class="text-late">> Event functions in the onboard Calender lacked the ability to denote a specific time of an event, only allowing the specification of a day.<br><br></div>
-                                <div class="text-late">> Worked to bring the calender application to a usable state.<br><br></div>   
-                            </div>
-                        </div>
+
                         
                         <div class="project-date text-3" style="overflow: visible; font-weight: bold">
                             June-July, 2022
@@ -895,6 +888,16 @@
                                 <div class="circle" id="cir2"></div>
                                 <div class="circle" id="cir3"></div>
                             </a>
+                        </div>
+                        <div class="article-left">
+                            <div>
+                                <div class="text-2">> Link 1: Implemented math constant Phi (Golden Ratio) functionality to onboard Calculator application.<br><br></div>
+                                <div class="text-4">> Inspired by onboard calculator's lacks high-level math functionality and user-friendliness for anything above basic calculation.<br><br></div>
+                                <div class="text-6">> Wanted to bring more flexibility to the function of the application.<br><br></div>
+                                <div class="text-late">> Link 2: Implemented ability to adjust time-of-day of events to 'Add Event' functionality of onboard Calender application.<br><br></div>
+                                <div class="text-late">> Event functions in the onboard Calender lacked the ability to denote a specific time of an event, only allowing the specification of a day.<br><br></div>
+                                <div class="text-late">> Worked to bring the calender application to a usable state.<br><br></div>   
+                            </div>
                         </div>
                     </div>
                 {/if}

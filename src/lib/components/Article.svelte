@@ -87,13 +87,13 @@
     }
 
     .title{
-        opacity: 75%;
+        opacity: 25%;
         transition: .2s ease-in-out;
         animation: fade 3s;
     }
 
     .title:hover{
-        opacity: 25%;
+        opacity: 75%;
         transition: .2s ease-in-out;
     }
 
@@ -107,7 +107,7 @@
             transform: translateY(100%);
         }
         100%{
-            opacity: 75%;
+            opacity: 25%;
             transform: translateY(0%);
         }
     }

@@ -28,13 +28,13 @@
     a{
         text-decoration: none;
         color: whitesmoke;
-        animation: fadeIn .25s ease-in-out;
+        animation: fadeIn 1s  cubic-bezier( 0.12, -0.01, 0, 1 );
         width: 100%;
         height: 100%;
     }
 
     .nav-item:hover > a{
-        animation: fadeOut .25s ease-in-out;
+        animation: fadeOut 1s  cubic-bezier( 0.12, -0.01, 0, 1 );
         opacity: 50%;
     }
 
@@ -78,7 +78,7 @@
 
     .main-nav-container:hover > .main-nav-body{
         opacity: 75%;
-        transition: .5s ease-in-out;
+        transition: 1s  cubic-bezier( 0.12, -0.01, 0, 1 );
     }
 
     .main-nav-body{
@@ -121,7 +121,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 60%;
+        width: 100%;
         padding: 0;
     }
 
@@ -129,11 +129,11 @@
         position: absolute;
         opacity: 0%;
         height: 0;
-        background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+        background-color: rgba(100, 100, 100, 50%);
         transition: .25s ease-in-out;
         transform: translate(-50px);
         color: transparent;
-        padding: 1px;
+        padding: 5px;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -209,6 +209,7 @@
     <div class="main-nav-container">
         
         <div class="main-nav-body" transition:fade|local={{duration: 500}}>
+            <!--
             <div class="audio-body">
                 <audio loop class="audio-player" id="player">
                     <source src="{base}/images/music.mp3" type="audio/mpeg">
@@ -220,10 +221,10 @@
                     {:else}
                         <div class="audio-button" on:click={()=>{document.getElementById('player').pause(); playing = false}}>||</div> 
                     {/if}
-                    <!--
+                    
                     <div class="audio-button" on:click={()=>{document.getElementById('player').volume -= 0.1}}>-</div>
                     <div class="audio-button" on:click={()=>{document.getElementById('player').volume += 0.1}}>+</div>
-                    -->  
+                    
                      
                 </div>
                 
@@ -234,17 +235,19 @@
                         Palace - ADTurnUp
                     </div>
                 {/if}
-            
+            -->
             <div class="nav-links">
                 
                 <div class="nav-item">
                     <div class="li-overlay">Home</div>
                     <a href="{base}/">Home</a>
                 </div>
+                <!--
                 <div class="nav-item">
                     <div class="li-overlay">Introduction</div>
                     <a href="{base}/blog">Introduction</a>
                 </div>
+                -->
                 <div class="nav-item">
                     <div class="li-overlay">Projects</div>
                     <a href="{base}/projects">Projects</a>
@@ -257,6 +260,7 @@
                     <div class="li-overlay">Film</div>
                     <a href="{base}/film">Film</a>
                 </div>
+                <!--
                 <div class="nav-item">
                     <div class="li-overlay">Books</div>
                     <a href="{base}/books">Books</a>
@@ -265,6 +269,7 @@
                     <div class="li-overlay">Blog</div>
                     <a href="{base}/blog">Blog</a>
                 </div>
+                -->
             </div>
         </div>
         
