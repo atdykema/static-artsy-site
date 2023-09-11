@@ -13,28 +13,28 @@
 
     const articles = {
         0: [
-            {id:'0', path: '/images/projects1-transformed-transformed.png', data: 
+            {id:'0', path: '/images/greeneats-transformed.jpeg', data: 
                 {
                 title: "The Big Short",
                 href: "https://www.imdb.com/title/tt1596363/"
                 }
                 
             },
-            {id:'1', path: '/images/project2-transformed-transformed.png', data: 
+            {id:'1', path: '/images/giraffe-search-transformed-transformed.jpeg', data: 
                 {
                 title: "Inglorious Basterds",
                 href: "https://www.imdb.com/title/tt0361748/"
                 }
                 
             },
-            {id:'2', path: '/images/project3-transformed-transformed.png', data: 
+            {id:'2', path: '/images/raytracing-transformed.jpeg', data: 
                 {
                 title: "The Batman",
                 href: "https://www.imdb.com/title/tt1877830/"
                 }
                 
             },
-            {id:'3', path: '/images/project4-transformed-transformed.png', data: 
+            {id:'3', path: '/images/serenity-transformed.jpeg', data: 
                 {
                 title: "Midsommar",
                 href: "https://www.imdb.com/title/tt8772262/"

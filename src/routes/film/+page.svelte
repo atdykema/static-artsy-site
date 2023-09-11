@@ -28,14 +28,14 @@
                 }
                 
             },
-            {id:'2', path: '/images/the-batman-transformed.jpeg', data: 
+            {id:'2', path: '/images/the-batman.jpg', data: 
                 {
                 title: "The Batman",
                 href: "https://www.imdb.com/title/tt1877830/"
                 }
                 
             },
-            {id:'3', path: '/images/midsommar-transformed.jpeg', data: 
+            {id:'3', path: '/images/midsommar.jpg', data: 
                 {
                 title: "Midsommar",
                 href: "https://www.imdb.com/title/tt8772262/"
@@ -79,7 +79,7 @@
                 }
                 
             },
-            {id:'9', path: '/images/the-sting-transformed.jpeg', data: 
+            {id:'9', path: '/images/the-sting.jpg', data: 
                 {
                 title: "The Sting",
                 href: "https://www.imdb.com/title/tt0070735/"
@@ -93,7 +93,7 @@
                 }
                 
             },
-            {id:'11', path: '/images/mulan-transformed-transformed.jpeg', data: 
+            {id:'11', path: '/images/mulan.jpg', data: 
                 {
                 title: "Mulan",
                 href: "https://www.imdb.com/title/tt0120762/"

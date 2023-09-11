@@ -57,7 +57,7 @@
                 }
                 
             },
-            {id:'3', path: '/images/kirinji-transformed.jpeg', data: 
+            {id:'3', path: '/images/kirinji.jpeg', data: 
                 {
                 title: "Kirinji", 
                 artist: "Kirinji", 
@@ -70,7 +70,7 @@
                 }
                 
             },
-            {id:'4', path: '/images/los-retros-transformed.jpeg', data: 
+            {id:'4', path: '/images/los-retros.jpg', data: 
                 {
                 title: "Los Retros", 
                 artist: "Los Retros", 
@@ -84,7 +84,7 @@
                 
                 
             },
-            {id:'5', path: '/images/rex-orange-county-transformed.jpeg', data: 
+            {id:'5', path: '/images/rex-orange-county.jpg', data: 
                 {
                 title: "Rex Orange County", 
                 artist: "Rex Orange County", 
@@ -98,7 +98,7 @@
                 
                 
             },
-            {id:'6', path: '/images/tyler-the-creator-transformed.webp', data: 
+            {id:'6', path: '/images/tyler-the-creator.webp', data: 
                 {
                 title: "Tyler, The Creator", 
                 artist: "Tyler, The Creator", 
@@ -127,7 +127,7 @@
                 }
                 
             },
-            {id:'1', path: '/images/aphex-twin-transformed.jpeg', data: 
+            {id:'1', path: '/images/aphex-twin.jpg', data: 
                 {
                 title: "Aphex Twin", 
                 artist: "Aphex Twin", 
@@ -213,7 +213,7 @@
                 href: "https://open.spotify.com/artist/0lRXEutklZUeNdWIJA1NI0?si=VPAtXc3BS_eTV9MAZjcP_w"
                 }
             },
-            {id:'3', path: '/images/anri-transformed.webp', data: 
+            {id:'3', path: '/images/anri.webp', data: 
                 {
                 title: "Anri", 
                 artist: "", 
@@ -242,7 +242,7 @@
                 href: "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4?si=MjBlkutKRxWF89RDAkb9lw"
                 }
             },
-            {id:'1', path: '/images/abba-transformed.jpeg', data: 
+            {id:'1', path: '/images/abba.jpg', data: 
                 {
                 title: "Abba", 
                 artist: "", 
@@ -260,7 +260,7 @@
                 href: "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi?si=dptJnsYPR0mLMM8W_eVmcg"
                 }
             },
-            {id:'3', path: '/images/the-beatles-transformed.jpeg', data: 
+            {id:'3', path: '/images/the-beatles.jpg', data: 
                 {
                 title: "The Beatles", 
                 artist: "", 
