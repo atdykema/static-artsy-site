@@ -285,7 +285,8 @@
         opacity: 5%;
         transform-origin: rotate(100deg);
         border-radius: 50px;
-        height: 750vh;
+        height: 200vh;
+        transition: linear;
     }
 
     .sleft{
@@ -504,7 +505,6 @@
             <div class="stripe sright" id="s10"></div>
             <div class="stripe sleft" id="s11"></div>
             <div class="stripe sright" id="s12"></div>
-            <div class="stripe sleft" id="s13"></div>
             <div class="stripe sright" id="s14"></div>
             <div class="stripe sleft" id="s15"></div>
             <div class="stripe sright" id="s16"></div>
