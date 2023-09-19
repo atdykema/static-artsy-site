@@ -33,6 +33,7 @@
         background: none;
         justify-content: center;
         align-content: center;
+        overflow: hidden;
 
 
     }
@@ -269,15 +270,266 @@
         }
     }
 
+    .funky-background{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .stripe{
+        flex: 1;
+        opacity: 5%;
+        transform-origin: rotate(100deg);
+        border-radius: 50px;
+        height: 750vh;
+    }
+
+    .sleft{
+        animation-name: spin;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sright{
+        animation-name: spinBack;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #s1{
+        animation-delay: .2s;
+    }
+
+    #s2{
+        animation-delay: .4s;
+    }
+
+    #s3{
+        animation-delay: .6s;
+    }
+
+    #s4{
+        animation-delay: .8s;
+    }
+    #s5{
+        animation-delay: 1s;
+    }
+
+    #s6{
+        animation-delay: 1.2s;
+    }
+
+    #s7{
+        animation-delay: 1.4s;
+    }
+
+    #s8{
+        animation-delay: 1.6s;
+    }
+    #s9{
+        animation-delay: 1.8s;
+    }
+
+    #s10{
+        animation-delay: 2s;
+    }
+
+    #s11{
+        animation-delay: 2.2s;
+    }
+
+    #s12{
+        animation-delay: 2.4s;
+    }
+    
+    #s13{
+        animation-delay: 2.6s;
+    }
+
+    #s14{
+        animation-delay: 2.8s;
+    }
+
+    #s15{
+        animation-delay: 3s;
+    }
+
+    #s16{
+        animation-delay: 3.2s;
+    }
+    #s17{
+        animation-delay: 3.4s;
+    }
+
+    #s18{
+        animation-delay: 3.6s;
+    }
+
+    #s19{
+        animation-delay: 3.8s;
+    }
+
+    #s20{
+        animation-delay: 4s;
+    }
+
+    #s21{
+        animation-delay: 4.2s;
+    }
+    #s22{
+        animation-delay: 4.4s;
+    }
+
+    #s23{
+        animation-delay: 4.6s;
+    }
+
+    #s24{
+        animation-delay: 4.8s;
+    }
+
+    #s25{
+        animation-delay: 5.0s;
+    }
+    #s26{
+        animation-delay: 5.2s;
+    }
+
+    #s27{
+        animation-delay: 5.4s;
+    }
+
+    #s28{
+        animation-delay: 5.6s;
+    }
+
+    #s29{
+        animation-delay: 5.8s;
+    }
+    #s13{
+        animation-delay: 6s;
+    }
+
+    #s30{
+        animation-delay: 6.2s;
+    }
+
+    #s31{
+        animation-delay: 6.4s;
+    }
+
+    #s32{
+        animation-delay: 6.6s;
+    }
+    #s33{
+        animation-delay: 6.8s;
+    }
+
+    #s34{
+        animation-delay: 7s;
+    }
+
+    #s35{
+        animation-delay: 7.2s;
+    }
+
+    #s36{
+        animation-delay: 0s;
+    }
+
+    @keyframes goToLeft{
+        0%{
+            transform: translateX(0);
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateX(200vw);
+            transform: translateY(200vh);
+        }
+        100%{
+            transform: translateX(0);
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes spin{
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg);}
+    }
+
+    @keyframes spinBack{
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg);}
+    }
+
+    @keyframes goToRight{
+        0%{
+            transform: translateX(0);
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateX(-200vw);
+            transform: translateY(-200vh);
+        }
+        100%{
+            transform: translateX(0);
+            transform: translateY(0);
+        }
+    }
+
+
 </style>
 
     
     <div class="main-inner-layer" in:fade|local={{duration: 500, delay: 1500}} out:fade|local={{duration: 500}}>
         <div class="main-inner-mask"></div>
         
-        <video class="video" autoplay muted loop style="position: absolute; z-index: -1; top:0; left:0; object-fit:cover; width: 100%; height: 100%;">
-            <source src="{base}/images/bg-1.mp4" type="video/mp4" />
-        </video>
+        <div class="funky-background">
+            <div class="stripe sright" id="s36"></div>
+            <div class="stripe sleft" id="s1"></div>
+            <div class="stripe sright" id="s2"></div>
+            <div class="stripe sleft" id="s3"></div>
+            <div class="stripe sright" id="s4"></div>
+            <div class="stripe sleft" id="s5"></div>
+            <div class="stripe sright" id="s6"></div>
+            <div class="stripe sleft" id="s7"></div>
+            <div class="stripe sright" id="s8"></div>
+            <div class="stripe sleft" id="s9"></div>
+            <div class="stripe sright" id="s10"></div>
+            <div class="stripe sleft" id="s11"></div>
+            <div class="stripe sright" id="s12"></div>
+            <div class="stripe sleft" id="s13"></div>
+            <div class="stripe sright" id="s14"></div>
+            <div class="stripe sleft" id="s15"></div>
+            <div class="stripe sright" id="s16"></div>
+            <div class="stripe sleft" id="s17"></div>
+            <div class="stripe sright" id="s18"></div>
+            <div class="stripe sleft" id="s19"></div>
+            <div class="stripe sright" id="s20"></div>
+            <div class="stripe sleft" id="s21"></div>
+            <div class="stripe sright" id="s22"></div>
+            <div class="stripe sleft" id="s23"></div>
+            <div class="stripe sright" id="s24"></div>
+            <div class="stripe sleft" id="s25"></div>
+            <div class="stripe sright" id="s26"></div>
+            <div class="stripe sleft" id="s27"></div>
+            <div class="stripe sright" id="s28"></div>
+            <div class="stripe sleft" id="s29"></div>
+            <div class="stripe sright" id="s30"></div>
+            <div class="stripe sleft" id="s31"></div>
+            <div class="stripe sright" id="s32"></div>
+            <div class="stripe sleft" id="s33"></div>
+            <div class="stripe sright" id="s34"></div>
+            <div class="stripe sleft" id="s35"></div>
+            
+
+        </div>
         
         <ul class="nav-links">
             <!--
