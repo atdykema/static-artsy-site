@@ -483,6 +483,13 @@
         }
     }
 
+    .border{
+        display: flex;
+        position: absolute;
+        z-index: 9999;
+        color: rgba(0,0,0,1);
+    }
+
 
 </style>
 
@@ -572,6 +579,9 @@
 
         </div>
 
+        <div class="border">
+            <div> An Andrew Dykema Website</div>
+        </div>
         
         <ul class="nav-links">
             <!--
