@@ -28,21 +28,14 @@
                 }
                 
             },
-            {id:'2', path: '/images/the-batman.jpg', data: 
-                {
-                title: "The Batman",
-                href: "https://www.imdb.com/title/tt1877830/"
-                }
-                
-            },
-            {id:'3', path: '/images/midsommar.jpg', data: 
+            {id:'2', path: '/images/midsommar.jpg', data: 
                 {
                 title: "Midsommar",
                 href: "https://www.imdb.com/title/tt8772262/"
                 }
                 
             },
-            {id:'4', path: '/images/princess-mononoke.jpg', data: 
+            {id:'3', path: '/images/princess-mononoke.jpg', data: 
                 {
                 title: "Princess Mononoke",
                 href: "https://www.imdb.com/title/tt0119698/"
@@ -50,7 +43,7 @@
                 
                 
             },
-            {id:'5', path: '/images/spiderverse.png', data: 
+            {id:'4', path: '/images/spiderverse.png', data: 
                 {
                 title: "Into the Spiderverse",
                 href: "https://www.imdb.com/title/tt4633694/"
@@ -58,42 +51,42 @@
                 
                 
             },
-            {id:'6', path: '/images/the-social-network.jpg', data: 
+            {id:'5', path: '/images/the-social-network.jpg', data: 
                 {
                 title: "The Social Network",
                 href: "https://www.imdb.com/title/tt1285016/"
                 }
                 
             },
-            {id:'7', path: '/images/interstellar2.jpg', data: 
+            {id:'6', path: '/images/interstellar2.jpg', data: 
                 {
                 title: "Interstellar",
                 href: "https://www.imdb.com/title/tt0816692/"
                 }
                 
             },
-            {id:'8', path: '/images/django.jpg', data: 
+            {id:'7', path: '/images/django.jpg', data: 
                 {
                 title: "Django",
                 href: "https://www.imdb.com/title/tt1853728/"
                 }
                 
             },
-            {id:'9', path: '/images/the-sting.jpg', data: 
+            {id:'8', path: '/images/the-sting.jpg', data: 
                 {
                 title: "The Sting",
                 href: "https://www.imdb.com/title/tt0070735/"
                 }
                 
             },
-            {id:'10', path: '/images/whiplash.jpg', data: 
+            {id:'9', path: '/images/whiplash.jpg', data: 
                 {
                 title: "Whiplash",
                 href: "https://www.imdb.com/title/tt2582802/"
                 }
                 
             },
-            {id:'11', path: '/images/mulan.jpg', data: 
+            {id:'10', path: '/images/mulan.jpg', data: 
                 {
                 title: "Mulan",
                 href: "https://www.imdb.com/title/tt0120762/"
@@ -231,10 +224,6 @@
         background: none;
         justify-content: center;
         align-content: center;
-        background: rgb(0,0,0);
-        background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,1) 100%);
     }
 
     .grid{

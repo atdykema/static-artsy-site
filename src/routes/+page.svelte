@@ -581,8 +581,8 @@
             </div>
             -->
             <div class="nav-item text-2">
-                <div class="li-overlay">Projects</div>
-                <a href="{base}/projects">Projects</a>
+                <div class="li-overlay">Art</div>
+                <a href="{base}/art">Art</a>
             </div>
             <div class="nav-item text-3">  
                 <div class="li-overlay">Music</div>
