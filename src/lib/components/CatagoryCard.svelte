@@ -37,6 +37,17 @@
 
     }
 
+    @media (max-width: 900px) {
+        .main-container:hover{
+            border-color: white;
+            color: whitesmoke;
+            opacity: 100%;
+            transform: translate(-10%);
+            transition: 2s  cubic-bezier( 0.12, -0.01, 0, 1 );
+
+        }
+    }
+ 
     .main-container-inner{
         display: flex;
         flex-direction: column;
@@ -94,7 +105,7 @@
 
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="main-container" style="background-image: url({base}{path}); {currentCatagory == id ? "opacity: 100%; transform: translate(0%);" : ""}" on:click={()=>{currentCatagory = parseInt(id); currentArticle = -1 * Math.random();}} >
+<div class="main-container" style="background-image: url({base}{path}); {currentCatagory == id ? "opacity: 100%; transform: translate(-10%);" : ""}" on:click={()=>{currentCatagory = parseInt(id); currentArticle = -1 * Math.random();}} >
     <div class="main-container-inner">
         <div class="title-container">
             

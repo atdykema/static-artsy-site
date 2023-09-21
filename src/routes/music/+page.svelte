@@ -492,18 +492,8 @@
 
     @media screen and (max-width: 900px){
         .main-inner-layer{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            position: relative;
-            margin-top: 10vh;
         }
 
-        .main-catagory-list{
-            width: 100%;
-            overflow-x: hidden;
-            height: 100%;
-        }
 
         .main-catagory-list-inner{
             overflow-y: visible;

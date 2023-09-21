@@ -95,7 +95,6 @@
             justify-content: center;
             align-content: center;
             position: relative;
-            margin-top: 10vh;
         }
 
         @keyframes ani {
@@ -273,33 +272,34 @@
     .funky-background{
         display: flex;
         position: absolute;
-        top: -175%;
-        left: -50%;
-        height: 200%;
-        width: 200%;
+        top: -50%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
         z-index: 1;
     }
 
     .funky-background2{
         display: flex;
         position: absolute;
-        top: 75%;
-        left: -50%;
-        height: 200%;
-        width: 200%;
+        top: 50%;
+        left: 0;
+        height: 100%;
+        width: 100%;
         z-index: 1;
         transform: rotate(180deg);
     }
 
     .stripe{
         flex: 1;
-        opacity: 100%;
-        border-radius: 25px;
-        height:100vh;
+        opacity: 20%;
+        border-radius: 10px;
+        height:50vh;
         transition: linear;
         animation-name: goToLeft;
-        animation-duration: 2s;
+        animation-duration: 6s;
         animation-iteration-count: infinite;
+        animation-delay: 1s;
     }
 
     #s1{
@@ -447,8 +447,8 @@
             background-color: rgb(255, 255, 255);
         }
         50%{
-            transform: translateX(100vw);
-            transform: translateY(100vh);
+            transform: translateX(20vw);
+            transform: translateY(20vh);
         }
         100%{
             transform: translateX(0);
@@ -583,7 +583,7 @@
             <div> An Andrew Dykema Website</div>
         </div>
         
-        <ul class="nav-links">
+        <div class="nav-links">
             <!--
             <div class="nav-item text-1">
                 <div class="li-overlay">Introduction</div>
@@ -612,5 +612,5 @@
                 <a href="{base}/blog">Blog</a>
             </div>
             -->
-        </ul>
+        </div>
     </div>

@@ -276,7 +276,6 @@
             justify-content: center;
             align-content: center;
             position: relative;
-            margin-top: 10vh;
         }
 
         .main-catagory-list{
