@@ -130,11 +130,14 @@
     .nav-links{
         display: flex;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
+        justify-content: end;
+        align-items: end;
+        font-size: 10rem;
         flex-direction: column;
         z-index: 100;
+        margin: 10%;
+        
+
         
     }
 
@@ -272,34 +275,89 @@
     .funky-background{
         display: flex;
         position: absolute;
-        top: -50%;
-        left: 0%;
-        height: 100%;
-        width: 100%;
+        top: -75%;
+        left: -60%;
+        height: 200vh;
+        width: 200vw;
         z-index: 1;
+        transform: rotate(180deg);
     }
 
     .funky-background2{
         display: flex;
         position: absolute;
-        top: 50%;
-        left: 0;
-        height: 100%;
-        width: 100%;
+        top: -75%;
+        left: -70%;
+        height: 200vh;
+        width: 200vw;
         z-index: 1;
-        transform: rotate(180deg);
+        transform: rotate(0deg);
+    }
+
+    .funky-background3{
+        display: flex;
+        position: absolute;
+        top: -75%;
+        left: -60%;
+        height: 200vh;
+        width: 200vw;
+        z-index: 1;
+        transform: rotate(90deg);
+    }
+
+    .funky-background4{
+        display: flex;
+        position: absolute;
+        top: -75%;
+        left: -10%;
+        height: 200vh;
+        width: 200vw;
+        z-index: 1;
+        transform: rotate(270deg);
     }
 
     .stripe{
         flex: 1;
         opacity: 20%;
-        border-radius: 10px;
-        height:50vh;
+        border-radius: 50px;
+        height:200vw;
         transition: linear;
         animation-name: goToLeft;
-        animation-duration: 6s;
+        animation-duration: 3s;
         animation-iteration-count: infinite;
-        animation-delay: 1s;
+
+    }
+
+    @keyframes goToLeft{
+        0%{
+            transform: translateX(100vh);
+            transform: translateY(100vw);
+            background-color: rgb(255, 255, 255);
+        }
+        50%{
+            transform: translateX(0vw);
+            transform: translateY(0vh);
+        }
+        100%{
+            transform: translateX(100vh);
+            transform: translateY(100vw);
+            background-color: rgb(0, 0, 0);
+        }
+    }
+
+    @keyframes goToRight{
+        0%{
+            transform: translateX(100vw);
+            transform: translateY(100vh);
+        }
+        50%{
+            transform: translateX(0vw);
+            transform: translateY(0vh);
+        }
+        100%{
+            transform: translateX(100vw);
+            transform: translateY(100vh);
+        }
     }
 
     #s1{
@@ -440,22 +498,7 @@
         animation-delay: 0s;
     }
 
-    @keyframes goToLeft{
-        0%{
-            transform: translateX(0);
-            transform: translateY(0);
-            background-color: rgb(255, 255, 255);
-        }
-        50%{
-            transform: translateX(20vw);
-            transform: translateY(20vh);
-        }
-        100%{
-            transform: translateX(0);
-            transform: translateY(0);
-            background-color: rgb(0, 0, 0);
-        }
-    }
+
 
     @keyframes spin{
         0% { transform: height(200vh)}
@@ -468,20 +511,7 @@
         100% { transform: rotate(0deg);}
     }
 
-    @keyframes goToRight{
-        0%{
-            transform: translateX(100vw);
-            transform: translateY(100vh);
-        }
-        50%{
-            transform: translateX(0vw);
-            transform: translateY(0vh);
-        }
-        100%{
-            transform: translateX(100vw);
-            transform: translateY(100vh);
-        }
-    }
+    
 
     .border{
         display: flex;
@@ -579,8 +609,86 @@
 
         </div>
 
-        <div class="border">
-            <div> An Andrew Dykema Website</div>
+        <div class="funky-background3">
+            <div class="stripe sright" id="s36"></div>
+            <div class="stripe sleft" id="s1"></div>
+            <div class="stripe sright" id="s2"></div>
+            <div class="stripe sleft" id="s3"></div>
+            <div class="stripe sright" id="s4"></div>
+            <div class="stripe sleft" id="s5"></div>
+            <div class="stripe sright" id="s6"></div>
+            <div class="stripe sleft" id="s7"></div>
+            <div class="stripe sright" id="s8"></div>
+            <div class="stripe sleft" id="s9"></div>
+            <div class="stripe sright" id="s10"></div>
+            <div class="stripe sleft" id="s11"></div>
+            <div class="stripe sright" id="s12"></div>
+            <div class="stripe sright" id="s13"></div>
+            <div class="stripe sright" id="s14"></div>
+            <div class="stripe sleft" id="s15"></div>
+            <div class="stripe sright" id="s16"></div>
+            <div class="stripe sleft" id="s17"></div>
+            <div class="stripe sright" id="s18"></div>
+            <div class="stripe sleft" id="s19"></div>
+            <div class="stripe sright" id="s20"></div>
+            <div class="stripe sleft" id="s21"></div>
+            <div class="stripe sright" id="s22"></div>
+            <div class="stripe sleft" id="s23"></div>
+            <div class="stripe sright" id="s24"></div>
+            <div class="stripe sleft" id="s25"></div>
+            <div class="stripe sright" id="s26"></div>
+            <div class="stripe sleft" id="s27"></div>
+            <div class="stripe sright" id="s28"></div>
+            <div class="stripe sleft" id="s29"></div>
+            <div class="stripe sright" id="s30"></div>
+            <div class="stripe sleft" id="s31"></div>
+            <div class="stripe sright" id="s32"></div>
+            <div class="stripe sleft" id="s33"></div>
+            <div class="stripe sright" id="s34"></div>
+            <div class="stripe sleft" id="s35"></div>
+            
+
+        </div>
+
+        <div class="funky-background4">
+            <div class="stripe sright" id="s36"></div>
+            <div class="stripe sleft" id="s1"></div>
+            <div class="stripe sright" id="s2"></div>
+            <div class="stripe sleft" id="s3"></div>
+            <div class="stripe sright" id="s4"></div>
+            <div class="stripe sleft" id="s5"></div>
+            <div class="stripe sright" id="s6"></div>
+            <div class="stripe sleft" id="s7"></div>
+            <div class="stripe sright" id="s8"></div>
+            <div class="stripe sleft" id="s9"></div>
+            <div class="stripe sright" id="s10"></div>
+            <div class="stripe sleft" id="s11"></div>
+            <div class="stripe sright" id="s12"></div>
+            <div class="stripe sright" id="s13"></div>
+            <div class="stripe sright" id="s14"></div>
+            <div class="stripe sleft" id="s15"></div>
+            <div class="stripe sright" id="s16"></div>
+            <div class="stripe sleft" id="s17"></div>
+            <div class="stripe sright" id="s18"></div>
+            <div class="stripe sleft" id="s19"></div>
+            <div class="stripe sright" id="s20"></div>
+            <div class="stripe sleft" id="s21"></div>
+            <div class="stripe sright" id="s22"></div>
+            <div class="stripe sleft" id="s23"></div>
+            <div class="stripe sright" id="s24"></div>
+            <div class="stripe sleft" id="s25"></div>
+            <div class="stripe sright" id="s26"></div>
+            <div class="stripe sleft" id="s27"></div>
+            <div class="stripe sright" id="s28"></div>
+            <div class="stripe sleft" id="s29"></div>
+            <div class="stripe sright" id="s30"></div>
+            <div class="stripe sleft" id="s31"></div>
+            <div class="stripe sright" id="s32"></div>
+            <div class="stripe sleft" id="s33"></div>
+            <div class="stripe sright" id="s34"></div>
+            <div class="stripe sleft" id="s35"></div>
+            
+
         </div>
         
         <div class="nav-links">
